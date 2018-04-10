@@ -1,0 +1,201 @@
+ul {
+	list-style-type: none;
+	margin: 0;
+	display: block;
+	justify-content: center;
+	align-items: center;
+	vertical-align: middle;
+}
+
+li {
+	display: inline-block;
+	justify-content: center;
+	align-items: center;
+	vertical-align: middle;
+
+}
+
+footer{
+	padding: 2%;
+	font-size: 0.2rem;
+	color: #444;
+}
+
+.nav{
+	margin: 0 auto;
+	background-color:white;
+	overflow: hidden;
+	box-shadow:	rgba(0,0,0,.1) 0px 10px 30px;
+	display: table;
+	border-bottom: 1px solid #f8f8f8;
+	position: fixed;
+	width: 100%;
+	height: 9%;
+	top: 0;
+	z-index: 1;
+	background-color: #090e3e;
+}
+
+
+.introPic > img{
+	width: 50%;
+	opacity: 0.90;
+	background: white;
+}
+
+.item{
+	margin: 0px ;
+	position: relative;
+	padding: 0 8px;
+	white-space: nowrap ;
+	border: none;
+	background: transparent;
+	vertical-align: middle;
+}
+
+.item_con{
+	padding: 8px ;
+	line-height: 1 ;
+	border-bottom: 2px solid transparent;
+	background: transparent;
+	vertical-align: middle;
+	color: white;
+	font-size: 0.5rem;
+
+}
+
+
+
+.logo{
+	background: transparent;
+	display: table-cell;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	width: 70%;
+	padding: 1%;
+
+}
+
+.logo > img{
+	flex-shrink: 0;
+	min-width:2%;
+	min-height: 2%;
+}
+.nav_item{
+	vertical-align: middle;
+}
+.menu{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.item_Container{
+	display: flex;
+	flex-wrap: wrap;
+
+}
+.item_con{
+	padding: 8px ;
+	line-height: 1 ;
+	border-bottom: 2px solid transparent;
+	background: transparent;
+	vertical-align: middle;
+	color: white;
+	font-size: 8%;
+
+}
+
+.item_con:hover{
+	border-bottom: 3px solid white;
+}
+.item{
+	margin: 0px ;
+	position: relative;
+	padding: 0 8px;
+	white-space: nowrap ;
+	border: none;
+	background: transparent;
+	vertical-align: middle;
+}
+
+
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+body {
+	font-family: 'Noto Sans TC', sans-serif;
+	background: #f7f7f7;
+}
+
+.first{
+	height: 852px;
+}
+
+.second{
+	margin: 0 auto; 
+	height: 852px;
+	background-color: #fdfdfd;
+}
+.second_content >h3{
+	text-align: center;
+}
+.second_content > p{
+	padding-left: 25%;
+	padding-right: 25%;
+	color: #081167;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 2;
+	font-size: 1rem;
+	letter-spacing: normal;
+	text-align: left;
+
+}
+
+.second_block{
+	margin-left: 0;
+	width: 40%;
+	margin: 2%;
+	height: 200px;
+	border-radius: 6px;
+	background-color: #ffffff;
+	box-shadow: 24px 24px 71px 0 rgba(2, 8, 22, 0.1);
+}
+.second_bottom{
+	margin-left: 10%;
+	margin-right: 10%;
+
+	display: flex;
+	flex-wrap:wrap;
+	justify-content:space-around;
+}
+
+.block_left{
+	width: 30%;
+	margin:0;
+}
+
+.block_right{
+	width: 70%;
+	margin:0; 
+}
+
+.block_content > p{
+	font-family: GenJyuuGothic-P;
+	font-size: 16px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5rem;
+	letter-spacing: normal;
+	text-align: left;
+	color: #4c4c4c;
+	font-size: 0.8rem;
+}
+
+.block_title > h5{
+	font-style: normal;
+	font-stretch: normal;
+	font-size: 1.1rem;
+	text-align: left;
+	color: #081167;
+}
