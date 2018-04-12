@@ -4,120 +4,348 @@
 	{% load staticfiles %}
 	<title>曼陀號領航計畫</title>
 	<link rel="stylesheet" href="{% static 'home.css' %}">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/plugins/ScrollToPlugin.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+	<script src="{% static 'home.js' %}"></script>
+
+
 </head>
 <body>
 	<div class="nav">	
 		<div class="logo">
+			<img src="{% static 'jpg/logo.png' %}" height="40px">
 		</div>	
 		<div class="menu">
 			<ul>	
 				<li class="nav_item">
-					<button id="home_btn" type="button" class="item" aria-haspopup="true" aria-expanded="false" aria-busy="false" onclick="">
-						<div class="item_con">Home</div>	
-					</button>
+					<a href="#first"><button id="home_btn" type="button" class="item" aria-haspopup="true" aria-expanded="false" aria-busy="false">
+						<div class="item_con">首頁</div>	
+					</button></a>
 				</li>
 				<li class="nav_item">
-					<button type="button" class="item" aria-haspopup="true" aria-expanded="false" aria-busy="false" onclick="">
+					<a href="#second"><button type="button" class="item" aria-haspopup="true" aria-expanded="false" aria-busy="false" onclick="">
 						<div class="item_con">計劃詳情</div>	
-					</button> 
+					</button></a>
 				</li>
 				<li class="nav_item">
-					<button type="button" class="item" aria-haspopup="true" aria-expanded="false" aria-busy="false" onclick="">
+					<a href="#third"><button type="button" class="item" aria-haspopup="true" aria-expanded="false" aria-busy="false" onclick="#third">
 						<div class="item_con">領航船長</div>	
-					</button>
+					</button></a>
 				</li>
 				<li class="nav_item">
-					<button type="button" class="item" aria-haspopup="true" aria-expanded="false" aria-busy="false">
+					<a href="#five"><button type="button" class="item" aria-haspopup="true" aria-expanded="false" aria-busy="false">
 						<div class="item_con">報名資格</div>	
-					</button> 
+					</button></a>
 				</li>
 			</ul>
 		</div>
 	</div>
-	<div class="fisrt">
-
+	
+	<div class="first" id="first">
+		<div class="first_content">
+			<div class="first_subtitle">
+				<h5>Girl in Tech x Ladies that UX</h5>
+			</div>
+			<div class="first_title">
+				<h2>第一屆曼陀號領航計畫<br>
+					The MentorShip Program 
+				</h2>
+			</div>
+			<div class="first_btn">
+				<button>立即報名  > </button>
+			</div>
+		</div>
 	</div>
-	<div class="second">
-		<div class="second_top">
-			<div class="second_title">
-				<h3>曼陀號領航計畫</h3>
-			</div>
-			<div class="second_content">
-				<p>台灣兩大致力於推廣女性於科技業和使用者體驗發展的非營利組織：Girls In Tech 和 Ladies that UX 台北分會<br>
-					共同舉辦第一屆 Mentor X Mentee 的 The MentorShip 曼陀號領航計畫。<br>
-					在為期四個月的計畫期間，邀請各領域知名專家擔任小組的業師，透過分組的方式，<br>
-					進行定期交流對談，傳承經驗，輔導Mentee 突破職場上的各種迷惘與挑戰，打造開放、互惠的交流平台。</p>
+
+	<article data-scrollmagic>
+		<div class="second" id="second">
+			<div class="second_top">
+				<div class="second_title">
+					<h3>曼陀號領航計畫</h3>
+				</div>
+				<div class="second_content">
+					<p>台灣兩大致力於推廣女性於科技業和使用者體驗發展的非營利組織：Girls In Tech 和 Ladies that UX 台北分會<br>
+						共同舉辦第一屆 Mentor X Mentee 的 The MentorShip 曼陀號領航計畫。<br>
+						在為期四個月的計畫期間，邀請各領域知名專家擔任小組的業師，透過分組的方式，<br>
+						進行定期交流對談，傳承經驗，輔導Mentee 突破職場上的各種迷惘與挑戰，打造開放、互惠的交流平台。</p>
+					</div>
+				</div>
+				<div class="second_bottom">
+					<div class="second_block">
+						<div class="block_left">
+							<img src="{% static 'jpg/ic_1.jpg' %}" height="60px">
+						</div>
+						<div class="block_right">
+							<div class="block_title">
+								<h5>人脈串連</h5>
+							</div>
+							<div class="block_content">
+								<p>
+									除了工作能力，職場上更不可或缺的專業力即是「人脈」。透過參與活動、相互交流，建立屬於你的人脈網，不僅增加工作上互助的好夥伴，更是為自己提高職場即戰力。
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="second_block">
+						<div class="block_left">
+							<img src="{% static 'jpg/ic_2.jpg' %}" height="60px">
+						</div>
+						<div class="block_right">
+							<div class="block_title">
+								<h5>知識傳承</h5>
+							</div>
+							<div class="block_content">
+								<p>
+									經驗是最難得的老師，更是最寶貴的知識！讓前輩帶領你深入了解業界需求，並分享專業路上的各種碰撞及成功經驗，是珍貴且無價的人生講堂。
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="second_block">
+						<div class="block_left">
+							<img src="{% static 'jpg/ic_3.jpg' %}" height="60px">
+
+						</div>
+						<div class="block_right">
+							<div class="block_title">
+								<h5>開發啟蒙</h5>
+							</div>
+							<div class="block_content">
+								<p>
+									對未來發展感到迷茫，不確定自己的下一步，或許是你還不夠了解自己。經由與夥伴相互學習、合作，接觸不同的專業領域，發掘自己的可能性，為職涯打造更多的機會。
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="second_block">
+						<div class="block_left">
+							<img src="{% static 'jpg/ic_4.jpg' %}" height="60px">
+						</div>
+						<div class="block_right">
+							<div class="block_title">
+								<h5>專業研習</h5>
+							</div>
+							<div class="block_content">
+								<p>
+									職涯目標明確、意志堅定，但如何讓自己更進一步？職場業師指點迷津，領導你了解向上發展的必要條件，確立目標，往更精進自己的航道無畏前行。 
+								</p>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="second_bottom">
-				<div class="second_block">
-					<div class="block_left">
-						
-					</div>
-					<div class="block_right">
-						<div class="block_title">
-							<h5>人脈串連</h5>
+		</article>
+		<article data-scrollmagic>
+			<div class="third" id="third">
+				<div class="third_title">
+					<h3>將由5位船長及航海士帶領水手們</h3>
+				</div>
+				<div class="people_container">
+					<div class="people">
+						<div class="people_pho">
+							<img src="{% static 'jpg/user.png' %}">
 						</div>
-						<div class="block_content">
-							<p>
-								除了工作能力，職場上更不可或缺的專業力即是「人脈」。透過參與活動、相互交流，建立屬於你的人脈網，不僅增加工作上互助的好夥伴，更是為自己提高職場即戰力。
-							</p>
+						<div class="people_name">
+							<h4>待定</h4>
+						</div>
+						<div class="people_title">
+							<h5>待定</h5>
+						</div>
+						<div class="people_firm">
+							<h5>待定</h5>
+						</div>
+						<div class="people_description">
+
+						</div>
+					</div>
+					<div class="people">
+						<div class="people_pho">
+							<img src="{% static 'jpg/user.png' %}">
+						</div>
+						<div class="people_name">
+							<h4>待定</h4>
+						</div>
+						<div class="people_title">
+							<h5>待定</h5>
+						</div>
+						<div class="people_firm">
+							<h5>待定</h5>
+						</div>
+						<div class="people_description">
+
+						</div>
+					</div>
+					<div class="people">
+						<div class="people_pho">
+							<img src="{% static 'jpg/user.png' %}">
+						</div>
+						<div class="people_name">
+							<h4>待定</h4>
+						</div>
+						<div class="people_title">
+							<h5>待定</h5>
+						</div>
+						<div class="people_firm">
+							<h5>待定</h5>
+						</div>
+						<div class="people_description">
+
+						</div>
+					</div>
+					<div class="people">
+						<div class="people_pho">
+							<img src="{% static 'jpg/user.png' %}">
+						</div>
+						<div class="people_name">
+							<h4>待定</h4>
+						</div>
+						<div class="people_title">
+							<h5>待定</h5>
+						</div>
+						<div class="people_firm">
+							<h5>待定</h5>
+						</div>
+						<div class="people_description">
+
+						</div>
+					</div>
+					<div class="people">
+						<div class="people_pho">
+							<img src="{% static 'jpg/user.png' %}">
+						</div>
+						<div class="people_name">
+							<h4>待定</h4>
+						</div>
+						<div class="people_title">
+							<h5>待定</h5>
+						</div>
+						<div class="people_firm">
+							<h5>待定</h5>
+						</div>
+						<div class="people_description">
+
 						</div>
 					</div>
 				</div>
-				<div class="second_block">
-					<div class="block_left">
-						
+				<div>
+
+				</div>
+			</div>
+		</article>
+
+		<div class="four" id="four">
+			<div class="four_title">
+				<img src="{% static 'jpg/ic_5.jpg' %}">
+				<h3>活動辦法</h3>
+			</div>
+			<div class="four_content">
+				<div class="four_left">
+					<ul>
+						<li>即日起~2018/5/13<br> 
+							第一階段書面報名 
+						</li>
+						<li>2018/6/3 <br>
+							初審 & 審查公布
+						</li>
+						<li>2018/6/23<br> 
+							第二階段面試複審
+						</li>
+						<li>
+							2018/7/4<br> 
+							第二階段複審錄取結果公佈
+						</li>
+					</ul>
+				</div>
+				<div class="vl"></div>
+				<div class="four_right">
+					<ul>
+						<li>於招募期間，選定參加之組別，填寫並繳交報名文件。
+						</li>
+						<li>
+							主辦單位屆時公布第一階段書面審錄取名單。
+						</li>
+						<li>
+							通過第一階段審查者，攜帶相關證明，出席第二階段複審面試現場<br>活動，由主辦單位安排與業師、學姊助教進行面談。
+						</li>
+						<li>
+							公布計畫錄取各組最終名單。<br>
+							最終錄取者將可參與The MentorShip 曼陀號領航計畫。
+						</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="five" id="five">
+			<div class="four_title">
+				<img src="{% static 'jpg/ic_5.png' %}">
+				<h3>招募對象及參加資格</h3>
+			</div>
+			<div class="five_content">
+				<div class="five_left">
+					<div class="five_left_left">
+						<h2>Sailors</h2>
+						<h6>水手 （導生）</h6>
+						<button>報名水手  ></button>
 					</div>
-					<div class="block_right">
-						<div class="block_title">
-							<h5>知識傳承</h5>
-						</div>
-						<div class="block_content">
-							<p>
-								經驗是最難得的老師，更是最寶貴的知識！讓前輩帶領你深入了解業界需求，並分享專業路上的各種碰撞及成功經驗，是珍貴且無價的人生講堂。
-							</p>
-						</div>
+					<div class="five_left_right">
+						<ul>
+							<li></li>
+							<li>·大四應屆畢業生</li>
+							<li>·研究生</li>
+							<li>·工作經驗2年內之職場人士</li>
+						</ul>
 					</div>
 				</div>
-				<div class="second_block">
-					<div class="block_left">
-						
+				<div class="five_right">
+					<div class="five_right_left">
+						<h2>Navigators</h2>
+						<h6>航海士 （職場前輩)</h6>
+						<button>報名航海士  ></button>
 					</div>
-					<div class="block_right">
-						<div class="block_title">
-							<h5>開發啟蒙</h5>
-						</div>
-						<div class="block_content">
-							<p>
-								對未來發展感到迷茫，不確定自己的下一步，或許是你還不夠了解自己。經由與夥伴相互學習、合作，接觸不同的專業領域，發掘自己的可能性，為職涯打造更多的機會。
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="second_block">
-					<div class="block_left">
-						
-					</div>
-					<div class="block_right">
-						<div class="block_title">
-							<h5>專業研習</h5>
-						</div>
-						<div class="block_content">
-							<p>
-								職涯目標明確、意志堅定，但如何讓自己更進一步？職場業師指點迷津，領導你了解向上發展的必要條件，確立目標，往更精進自己的航道無畏前行。 
-							</p>
-						</div>
+					<div class="five_right_right">
+						<ul>
+							<li>·女性</li>
+							<li>·至少具備其中一組5年專業領域工作經驗 (工作總年資不限)</li>
+							<li>·具備提拔後進熱忱，樂意提供第一線實務協助者</li>
+							<li>·未來有興趣回饋女性科技社群者</li>
+						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="third">
-			<div>
-			
+
+		<div class="six">
+			<div class="six_title">
+				<img src="{% static 'jpg/ic_5.jpg' %}">
+				<h3>注意事項</h3>
 			</div>
-		</div>
-		<div class="four">
+			<div class="six_content">
+				<ul>
+					<li>為求活動交流與出席品質，計畫錄取者需於開幕式時繳交$2,000新台幣押金作為擔保，保證出勤次數符合主辦單位規定。如計畫期間出勤    
+						符合大會規定，押金將於結業式時全額退還。
+					</li>
+					<li>計劃參加者必須出席開幕式。結業式、與3次meet-up，如因故無法出席，需寫信向主辦單位請假，缺席2次未到者，主辦單位有權終止該員出  
+						席計畫後續活動，並沒收保證金。
+					</li>
+					<li>計劃參加者需同意主辦單位使用參加者本次活動照片與資料，作為活動文宣推廣，活動紀錄，以及行銷文宣使用。
+					</li>
+					<li>主辦單位保有隨時修改及終止本活動之權利，如有任何變更內容或詳細注意事項將公布於計畫粉絲專頁，恕不另行個別通知。
+					</li>
+				</ul>
+			</div>
+			<div class="seven">
+
+			</div>
+			<div class="eight">
+
+			</div>
 
 		</div>
 	</body>
