@@ -26,6 +26,7 @@ li {
 	height: 2rem;
 	top: 0;
 	z-index: 1;
+	justify-content: flex-end;
 	background-color: #111743;
 }
 
@@ -65,15 +66,15 @@ li {
 	justify-content: center;
 	align-items: center;
 	overflow: hidden;
-	width: 50rem;
+	width: 40rem;
 	padding: 1%;
 
 }
 
 .logo > img{
 	flex-shrink: 0;
-	min-width:2%;
-	min-height: 2%;
+	min-width:3rem;
+	min-height: 3rem;
 }
 .nav_item{
 	vertical-align: middle;
@@ -82,6 +83,8 @@ li {
 	display: table-cell;
 	vertical-align: middle;
 	overflow: hidden;
+	float: right;
+	margin-right: 1rem;
 }
 
 .item_Container{
@@ -96,7 +99,7 @@ li {
 	background: transparent;
 	vertical-align: middle;
 	color: white;
-	font-size: 0.7rem;
+	font-size: 1rem;
 
 }
 
@@ -728,17 +731,18 @@ html, body {
 	.nav{
 		height: 2rem;
 	}
+
 }
 
 @font-face {
-    font-family: GenJyuuGothic-P;
-    src: url(GenJyuuGothic-P-Normal.ttf);
+	font-family: GenJyuuGothic-P;
+	src: url(GenJyuuGothic-P-Normal.ttf);
 }
 @font-face {
-    font-family: GenJyuuGothic-P-ExtraLight;
-    src: url(GenJyuuGothic-P-ExtraLight.ttf);
+	font-family: GenJyuuGothic-P-ExtraLight;
+	src: url(GenJyuuGothic-P-ExtraLight.ttf);
 }
 @font-face {
-    font-family: GenJyuuGothic-P-Bold;
-    src: url(GenJyuuGothic-P-Bold.ttf);
+	font-family: GenJyuuGothic-P-Bold;
+	src: url(GenJyuuGothic-P-Bold.ttf);
 }
