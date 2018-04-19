@@ -353,6 +353,21 @@ html, body {
 	text-align: center;
 	color: #709be7; 
 }
+.people_firm > a > h5{
+	color: #709be7; 
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.people_firm > a {
+
+	text-decoration: none;
+}
+
+
+.people_firm > a > h5:hover{
+	color: grey; 
+}
 
 .four{
 	background-color: white;
