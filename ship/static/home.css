@@ -929,6 +929,14 @@ html, body {
 		font-size: 0.5rem;
 	}
 
+	.four{
+		height: 1080px;
+	}
+
+	.vl{
+		height: 900px;
+	}
+
 	.second_content > p{
 		padding: 2rem;
 		display: flex;
@@ -941,7 +949,7 @@ html, body {
 	}
 
 	.third {
-		height: 1650px;
+		height: 1780px;
 	}
 
 	.people {
