@@ -371,18 +371,24 @@ html, body {
 
 .four{
 	background-color: white;
-	height: 650px;
+	height: 1000px;
 }
-.four_content{
+
+.ten{
+	background-color: #111743;
+	height: 650px;
+	margin-top: -2rem;
+}
+.four_content, .ten_content{
 	display: flex;
 	left:0;
 	width: 100%;
 }
 
-.four_left{
+.four_left, .ten_left{
 	width: 35%;
 }
-.four_left > ul > li{
+.four_left > ul > li, .ten_left > ul > li{
 	margin-bottom: 3rem;
 	font-size: 1rem;
 	font-weight: bold;
@@ -390,10 +396,11 @@ html, body {
 	font-stretch: normal;
 	line-height: 1.5rem;
 	letter-spacing: normal;
-	color: #081167;
+
 }
 
-.four_right > ul > li{
+
+.four_right > ul > li , .ten_left > ul > li{
 	width: 100%;
 	padding: 0.4rem;
 	margin-bottom: 3rem;
@@ -403,7 +410,13 @@ html, body {
 	font-stretch: normal;
 	line-height: 1.5rem;
 	letter-spacing: normal;
+}
+
+.four_left > ul > li, .four_right > ul > li{
 	color: #081167;
+}
+.ten_left > ul > li, .ten_right > ul > li{
+	color: white;
 }
 .icons{
 	display: flex;
@@ -423,14 +436,14 @@ html, body {
 }
 .vl {
 	border-left: 2px solid #081167;
-	height: 480px;
+	height: 850px;
 }
 
-.four_right{
+.four_right, .ten_right {
 	width: 55%;
 }
 
-.four_left > ul > li{
+.four_left > ul > li, .ten_left > ul > li {
 	font-family: GenJyuuGothic-P-Bold;
 	width: 100%;
 	float: right;
@@ -440,7 +453,7 @@ html, body {
 	font-weight: bold;
 }
 
-.four_right > ul > li{
+.four_right > ul > li , .ten_right > ul > li{
 	margin-top: 1.1rem;
 	float: left;
 	margin-left: 4rem;
@@ -451,8 +464,13 @@ html, body {
 	letter-spacing: normal;
 }
 
+.ten_right > ul > li{
+	margin-bottom: 3.2rem;
+	line-height: 2.5rem;
+}
 
-.four_right > ul,.four_left > ul{
+
+.four_right > ul,.four_left > ul, .ten_right > ul,.ten_left > ul  {
 	margin-top: 1rem;
 }
 
@@ -464,7 +482,7 @@ html, body {
 	height: 500px;
 }
 
-.five_title > img, .four_title > img,.six_title > img{
+.five_title > img, .four_title > img,.six_title > img ,.ten_title > img{
 	float: left;
 	width: 3.8rem;
 	height: 3.8rem;
@@ -472,8 +490,17 @@ html, body {
 	margin-top: 2rem;
 	margin-left: 8rem;
 }
-
-.five_title > h3 , .four_title > h3, .six_title > h3 {
+.ten_title > h3 {
+	text-align: left;
+	padding-left: 10rem;
+	padding-top: 3rem;
+	font-size: 1.5rem;
+	color: white;
+	width: 20%;
+	margin: 0;
+	position: relative;
+}
+.five_title > h3 , .four_title > h3, .six_title > h3{
 	text-align: left;
 	padding-left: 10rem;
 	padding-top: 3rem;
@@ -942,16 +969,16 @@ html, body {
 		margin-bottom: 4rem;
 	}
 
-	.four_left{
+	.four_left , .ten_left{
 		width: 42%;
 	}
 
-	.four_right {
+	.four_right , .ten_right{
 		width: 52%;
 		padding: 0;
 	}
 
-	.four_right > ul > li{
+	.four_right > ul > li ,.ten_right > ul > li{
 		margin-top: 0.2rem;
 		margin-left: 0rem;
 		padding: 0rem;
@@ -959,6 +986,7 @@ html, body {
 		margin-bottom: 3rem;
 
 	}
+
 	.icons > img {
 		display: none;
 	}
@@ -1099,9 +1127,9 @@ html, body {
 }
 
 @media only screen and (max-width: 500px)  {
-.nine{
-	display: none;
-}
+	.nine{
+		display: none;
+	}
 }
 
 
