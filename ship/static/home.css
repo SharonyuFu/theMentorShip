@@ -25,7 +25,7 @@ h2, h3{
 	position: right;
 }
 
-.logos > img{
+.logos > img, .logos > a > img {
 	width: 4rem;
 	margin-right: 2rem;
 }
@@ -82,14 +82,14 @@ h2, h3{
 	justify-content: center;
 	align-items: center;
 	overflow: hidden;
-	width: 40rem;
+	width: 30rem;
 	padding: 1%;
 }
 
 .logo > img{
 	flex-shrink: 0;
-	min-width:3rem;
-	min-height: 3rem;
+	min-width:1rem;
+	min-height: 1rem;
 }
 .nav_item{
 	vertical-align: middle;
@@ -154,19 +154,7 @@ html, body {
 	padding-top:10rem; 
 }
 
-.first_subtitle > h5{
-	font-size: 1.2rem;
-	font-weight: 500;
-	font-style: normal;
-	font-stretch: normal;
-	line-height: normal;
-	letter-spacing: normal;
-	text-align: left;
-	color: #709be7;
-	margin-bottom: 0;
-	font-family: GenJyuuGothic-P;
 
-}
 .first_title > h2:nth-child(1){
 	margin-top: 0.5rem;
 	font-size: 2.8rem;
@@ -192,10 +180,10 @@ html, body {
 
 .first_btn > a >button{
 	width: 8rem;
-	height: 2.5rem;
+	height: 2.86rem;
 	border:none;
 	border-radius: 5px;
-	background-image: linear-gradient(249deg, #fa2b56, #f91c3d);
+	background:#4a90e2;
 	box-shadow: 20px 20px 60px 0 rgba(0, 0, 0, 0.4);
 	color: white;
 	cursor: pointer;
@@ -205,11 +193,13 @@ html, body {
 
 .second{
 	margin: 0 auto; 
-	height: 750px;
+	height: 1050px;
 	background-color: #fdfdfd;
 	margin-top: -2rem;
 
 }
+
+
 
 .second_title > h3{
 	text-align: center;
@@ -225,13 +215,13 @@ html, body {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 39rem;
+	width: 56rem;
 	color: #081167;
 	font-style: normal;
 	font-stretch: normal;
-	line-height: 2;
-	font-size: 0.8rem;
-	font-weight: 2;
+    line-height: 2.5rem;
+    font-size: 1.2rem;
+    font-weight: 2;
 	font-style: bold;
 	letter-spacing: normal;
 	text-align: left;
@@ -244,15 +234,18 @@ html, body {
 	display: flex;
 	width: 22rem;
 	margin: 2%;
-	height: 200px;
+	height: 16.54rem;
 	border-radius: 6px;
 	background-color: #ffffff;
 	box-shadow: 24px 24px 71px 0 rgba(2, 8, 22, 0.1);
 
 }
+
+
+
 .second_bottom{
-	margin-left: 10%;
-	margin-right: 10%;
+    margin-left: 12.5rem;
+    margin-right: 12.5rem;
 	display: flex;
 	flex-wrap:wrap;
 	justify-content:space-around;
@@ -278,11 +271,9 @@ html, body {
 
 .block_content > p{
 	font-family: GenJyuuGothic-P;
-	font-size: 16px;
 	font-weight: normal;
 	font-style: normal;
 	font-stretch: normal;
-	line-height: 1.5rem;
 	letter-spacing: normal;
 	text-align: left;
 	color: #4c4c4c;
@@ -290,6 +281,8 @@ html, body {
 	display: block;
 	padding-right: 1rem;
 	padding-left: 1rem;
+	font-size: 1rem;
+    line-height: 1.9rem;
 }
 
 .block_title > h5{
@@ -304,9 +297,20 @@ html, body {
 }
 
 .third{
-	background: #090e3e;
-	height: 1000px;
+	height: 1400px;
 	margin-top: -2rem;
+}
+.third, .ele {
+	background: #090e3e;
+}
+
+.ele {
+	height: 500px;
+}
+
+
+.ele_title > h3{
+	color:white;
 }
 .people_container{
 	display: flex;
@@ -351,6 +355,16 @@ html, body {
 	text-align: center;
 	font-size: 1.2rem;
 }
+.people_quote{
+	text-align: center;
+	color: white; 
+	font-weight: lighter;
+	line-height: 1.5rem;
+	letter-spacing:0.1rem;
+	text-align: center;
+	font-size: 0.8rem;
+	height: 5rem;
+}
 
 .people_title{
 	text-align: center;
@@ -364,6 +378,11 @@ html, body {
 }
 
 .people_firm{
+	text-align: center;
+	color: #709be7; 
+}
+.people_description {
+	height: 2rem;
 	text-align: center;
 	color: #709be7; 
 }
@@ -385,7 +404,7 @@ html, body {
 
 .four{
 	background-color: white;
-	height: 1000px;
+	height: 800px;
 }
 
 .ten{
@@ -450,7 +469,7 @@ html, body {
 }
 .vl {
 	border-left: 2px solid #081167;
-	height: 850px;
+	height: 500px;
 }
 
 .four_right, .ten_right {

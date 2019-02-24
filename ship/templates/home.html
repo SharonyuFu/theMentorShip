@@ -29,7 +29,7 @@
 <body>
 	<div class="nav">	
 		<div class="logo">
-			<img src="{% static 'jpg/logo.png' %}" height="40px">
+			<img src="{% static 'jpg/logo.png' %}" height="20px">
 		</div>	
 		<div class="menu">
 			<ul>	
@@ -50,7 +50,17 @@
 				</li>
 				<li class="nav_item">
 					<a href="#first"><button id="home_btn" type="button" class="item" aria-haspopup="true" aria-expanded="false" aria-busy="false">
-						<div class="item_con">首頁</div>	
+						<div class="item_con">歷屆活動</div>	
+					</button></a>
+				</li>
+				<li class="nav_item">
+					<a href="#first"><button id="home_btn" type="button" class="item" aria-haspopup="true" aria-expanded="false" aria-busy="false">
+						<div class="item_con">FAQ</div>	
+					</button></a>
+				</li>
+				<li class="nav_item">
+					<a href="#first"><button id="home_btn" type="button" class="item" aria-haspopup="true" aria-expanded="false" aria-busy="false">
+						<div class="item_con">贊助夥伴</div>	
 					</button></a>
 				</li>
 			</ul>
@@ -59,17 +69,19 @@
 	
 	<div class="first" id="first">
 		<div class="first_content">
-			<div class="first_subtitle">
-				<h5>Girls in Tech Taiwan x Ladies that UX Taipei</h5>
-			</div>
 			<div class="first_title">
-				<h2>第一屆曼陀號領航計畫</h2>				
+				<h2>第二屆曼陀號領航計畫</h2>				
 				<h2>The MentorShip Program </h2>
 			</div>
 			<div class="first_btn" style="displatnone">
-				<a href="https://www.facebook.com/The-MentorShip-%E6%9B%BC%E9%99%80%E8%99%9F%E9%A0%98%E8%88%AA%E8%A8%88%E7%95%AB-127497411432339/"><button>加入粉專 > </button></a>
+				<a href="https://www.facebook.com/The-MentorShip-%E6%9B%BC%E9%99%80%E8%99%9F%E9%A0%98%E8%88%AA%E8%A8%88%E7%95%AB-127497411432339/"><button>立即報名 > </button></a>
 			</div>
 			<div class="logos_frame">
+				<div class="logos">
+					<a href="https://www.facebook.com/thementorshiptaiwan">
+						<img src="{% static 'jpg/Mentor_logo.png'%}">
+					</a>
+				</div>
 				<div class="logos">
 					<img src="{% static 'jpg/GIT_logo.png'%}">
 				</div>
@@ -87,397 +99,429 @@
 					<h3>曼陀號領航計畫</h3>
 				</div>
 				<div class="second_content">
-					<p>台灣兩大致力於推廣女性於科技業和使用者體驗發展的非營利組織：Girls In Tech 和 Ladies that UX 台北分會
-						共同舉辦第一屆 Mentor X Mentee 的 The MentorShip 曼陀號領航計畫。
-						在為期四個月的計畫期間，邀請各領域知名專家擔任小組的業師，透過分組的方式，
-						進行定期交流對談，傳承經驗，輔導Mentee 突破職場上的各種迷惘與挑戰，打造開放、互惠的交流平台。</p>
-					</div>
-				</div>
-				<div class="second_bottom">
-					<div class="second_block">
-						<div class="block_left">
-							<img src="{% static 'jpg/ic_1.jpg' %}" height="60px">
-						</div>
-						<div class="block_right">
-							<div class="block_title">
-								<h5>人脈串連</h5>
-							</div>
-							<div class="block_content">
-								<p>
-									除了工作能力，職場上更不可或缺的專業力即是「人脈」。透過參與活動、相互交流，建立屬於你的人脈網，不僅增加工作上互助的好夥伴，更是為自己提高職場即戰力。
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="second_block">
-						<div class="block_left">
-							<img src="{% static 'jpg/ic_2.jpg' %}" height="60px">
-						</div>
-						<div class="block_right">
-							<div class="block_title">
-								<h5>知識傳承</h5>
-							</div>
-							<div class="block_content">
-								<p>
-									經驗是最難得的老師，更是最寶貴的知識！讓前輩帶領你深入了解業界需求，並分享專業路上的各種碰撞及成功經驗，是珍貴且無價的人生講堂。
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="second_bottom">
-					<div class="second_block">
-						<div class="block_left">
-							<img src="{% static 'jpg/ic_3.jpg' %}" height="60px">
+					<p>台灣致力推廣女性於科技業和使用者體驗發展的兩大非營利組織：Girls In Tech 與 Ladies that UX 台北分會，共同舉辦「The MentorShip 曼陀號領航計畫」（非獨立組織計畫）
+						本計畫所有人員皆以志工形式參與，整體活動時程為期四個月，將邀請各領域知名專家擔任小組船長 (Mentor)，分組舉行實體聚會。透過船長的專業分享與經驗傳承，幫助水手 (Mentee) 縮短職涯摸索的成本，突破職涯上的瓶頸與挑戰，成為科技女性領袖人才。水手們來自各個產業與職位，帶著共同的職涯目標與各自碰到的問題，透過計畫分享與串聯，幫助彼此互相學習成長，一起打造開放互惠的女性科技社群。
 
+					</p>
+				</div>
+			</div>
+			<div class="second_bottom">
+				<div class="second_block">
+					<div class="block_left">
+						<img src="{% static 'jpg/ic_1.jpg' %}" height="60px">
+					</div>
+					<div class="block_right">
+						<div class="block_title">
+							<h5>人脈串連</h5>
 						</div>
-						<div class="block_right">
-							<div class="block_title">
-								<h5>開發啟蒙</h5>
-							</div>
-							<div class="block_content">
-								<p>
-									對未來發展感到迷茫，不確定自己的下一步，或許是你還不夠了解自己。經由與夥伴相互學習、合作，接觸不同的專業領域，發掘自己的可能性，為職涯打造更多的機會。
-								</p>
-							</div>
+						<div class="block_content">
+							<p>
+								除了工作能力，職場上更不可或缺的專業力即是「人脈」。透過參與活動、相互交流，建立屬於你的人脈網，不僅增加工作上互助的好夥伴，更是為自己提高職場即戰力。
+							</p>
 						</div>
 					</div>
-					<div class="second_block">
-						<div class="block_left">
-							<img src="{% static 'jpg/ic_4.jpg' %}" height="60px">
+				</div>
+				<div class="second_block">
+					<div class="block_left">
+						<img src="{% static 'jpg/ic_2.jpg' %}" height="60px">
+					</div>
+					<div class="block_right">
+						<div class="block_title">
+							<h5>知識傳承</h5>
 						</div>
-						<div class="block_right">
-							<div class="block_title">
-								<h5>專業研習</h5>
-							</div>
-							<div class="block_content">
-								<p>
-									職涯目標明確、意志堅定，但如何讓自己更進一步？職場業師指點迷津，領導你了解向上發展的必要條件，確立目標，往更精進自己的航道無畏前行。 
-								</p>
-							</div>
+						<div class="block_content">
+							<p>
+								經驗是最難得的老師，更是最寶貴的知識！讓前輩帶領你深入了解業界需求，並分享專業路上的各種碰撞及成功經驗，是珍貴且無價的人生講堂。
+							</p>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</article>
-		<div class="nine" id="nine" style="background-image: url({% static 'jpg/nine_bg.png' %})">
-		<div class="nine_title">
-			<h3>導師制度</h3>
-		</div>
-		<div class="nine_content">
-			<div class="nine_right">
-				<img src="{% static 'jpg/line_tri.png' %}" height="600px">
-			</div>
-			<div class="nine_right">
-				<div class="nine_role">
-					<h4>船長 Captain （業師）</h4>
-					<h5>-每月Meetup中，分享自己經驗，協助航海士、水手開拓視野，給予產業、職涯大方向等建議</h5>
+			<div class="second_bottom">
+				<div class="second_block">
+					<div class="block_left">
+						<img src="{% static 'jpg/ic_3.jpg' %}" height="60px">
+
+					</div>
+					<div class="block_right">
+						<div class="block_title">
+							<h5>開發啟蒙</h5>
+						</div>
+						<div class="block_content">
+							<p>
+								對未來發展感到迷茫，不確定自己的下一步，或許是你還不夠了解自己。經由與夥伴相互學習、合作，接觸不同的專業領域，發掘自己的可能性，為職涯打造更多的機會。
+							</p>
+						</div>
+					</div>
 				</div>
-				<div class="nine_role">
-					<h4>航海士 Navigators （職場學姊）</h4>
-					<h5>-傾聽、給予水手職場實作上的過來人建議，協助水手在職涯初期需要的務實成長，培養自身領導管理能力；在船長的帶領之下，探索未來發展更多可能</h5>
-				</div>
-				<div class="nine_role">
-					<h4>水手 Sailors（導生）</h4>
-					<h5>-對自身發展有理想、希望能吸取前輩經驗，往目標更加努力；或對職涯發展略有迷惘，帶著切身問題和其他水手、以及前輩們交流</h5>
+				<div class="second_block">
+					<div class="block_left">
+						<img src="{% static 'jpg/ic_4.jpg' %}" height="60px">
+					</div>
+					<div class="block_right">
+						<div class="block_title">
+							<h5>專業研習</h5>
+						</div>
+						<div class="block_content">
+							<p>
+								職涯目標明確、意志堅定，但如何讓自己更進一步？職場業師指點迷津，領導你了解向上發展的必要條件，確立目標，往更精進自己的航道無畏前行。 
+							</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<article data-scrollmagic>
-		<div class="third" id="third">
-			<div class="third_title">
-				<h3>將由5位船長及航海士帶領水手們</h3>
-			</div>
-			<div class="people_container">
-				<div class="people" id="user_1">
-					<div class="people_title">
-						<h4>UX 使用者體驗設計</h4>
-					</div>
-					<div class="people_pho">
-						<img src="{% static 'jpg/user_1.png' %}">
-					</div>
-					<div class="people_name">
-						<h4>沈美君 Diane Shen</h4>
-					</div>
-					<div class="people_firm">
-						<a href="http://www.businessmodelsinc.com"><h5>Business Models Inc.方略 設計總監</h5></a>
-					</div>
-					<div class="people_description" style="display: none;">
-						<h6>Diane 擅長於策略、服務體驗設計與使用者研究，長期在不同國家與跨領域團隊合作（高科技、電信、金融、零售、食品、生活風格、社會企業），協助團隊做新事業開發、制定創新策略或商業模式、服務設計，也正在探究如何創造能跨越語言和文化、更好的協同合作和策略設計的方式。她同時也是 Craftventure 共同創辦人，相信傳統工匠精神可以為失落的一代帶來啓發。</h6>
-					</div>
-				</div>
-				<div class="people">
-					<div class="people_title">
-						<h4>Engineering 技術開發</h4>
-					</div>
-					<div class="people_pho">
-						<img src="{% static 'jpg/user_2.jpg' %}">
-					</div>
-					<div class="people_name">
-						<h4>游舒帆 Gipi</h4>
-					</div>
-
-					<div class="people_firm">
-						<h5>探索原力 Co-founder</h5>
-					</div>
-					<div class="people_description">
-						<div class="people_description" style="display: none;">
-							<h6>曾任TutorABC協理與鼎新電腦總監，並曾獲選兩屆微軟最有價值專家 ( MVP )，在TutorABC期間最多曾帶領約300位研發人員，負責的工作範圍遍及研發、運營、運維、產品、專案、行銷、數據分析與業務改善。離開職場後創辦探索原力，致力於協助青少年培養面對未來的能力。認為教育與組織育才其實息息相關，都是在為未來儲備能量，2018年起成立為期一年的專題課程《職涯躍升的關鍵24堂課》，為培養台灣未來的領袖而努力。</h6>
-						</div>
-					</div>
-				</div>
-				<div class="people">
-					<div class="people_title">
-						<h4>Operation 企業營運</h4>
-					</div>
-					<div class="people_pho">
-						<img src="{% static 'jpg/user_3.png' %}">
-					</div>
-					<div class="people_name">
-						<h4>林惠君 Clare Lin</h4>
-					</div>
-					<div class="people_firm">
-						<h5>Amazon 亞馬遜全球開店 台灣區總經理</h5>
-					</div>
-					<div class="people_description">
-
-					</div>
-				</div>
-				<div class="people">
-					<div class="people_title">
-						<h4>Business商務開發</h4>
-					</div>
-					<div class="people_pho">
-						<img src="{% static 'jpg/user_4.jpg' %}">
-					</div>
-					<div class="people_name">
-						<h4>林燕 Geena Lin</h4>
-					</div>
-					<div class="people_firm">
-						<h5>Yahoo奇摩拍賣事業群 業務總經理</h5>
-					</div>
-					<div class="people_description">
-
-					</div>
-				</div>
-				<div class="people">
-					<div class="people_title">
-						<h4>Data Application 數據整合應用</h4>
-					</div>
-					<div class="people_pho">
-						<img src="{% static 'jpg/user_5.png' %}">
-					</div>
-					<div class="people_name">
-						<h4>Kalvar 林國銘 </h4>
-					</div>
-					<div class="people_firm">
-						<h5>學識智能科技 創辦人</h5>
-					</div>
-					<div class="people_description">
-
-					</div>
-				</div>
-				<div class="people">
-					<div class="people_title">
-						<h4>Data Application 數據整合應用</h4>
-					</div>
-					<div class="people_pho">
-						<img src="{% static 'jpg/user_6.jpg' %}">
-					</div>
-					<div class="people_name">
-						<h4>Nina  曾怡寧  </h4>
-					</div>
-					<div class="people_firm">
-						<h5>Sephora 北美區行銷部行銷數據經理 </h5>
-					</div>
-					<div class="people_description">
-
-					</div>
-				</div>
-			</div>
-			<div>
-
-			</div>
+</article>
+<div class="nine" id="nine" style="background-image: url({% static 'jpg/nine_bg.png' %})">
+	<div class="nine_title">
+		<h3>導師制度</h3>
+	</div>
+	<div class="nine_content">
+		<div class="nine_right">
+			<img src="{% static 'jpg/line_tri.png' %}" height="600px">
 		</div>
-	</article>
-
-	<div class="four" id="four">
-		<div class="four_title">
-			<img src="{% static 'jpg/ic_5.jpg' %}">
-			<h3>活動辦法</h3>
-		</div>
-		<div class="four_content">
-			<div class="four_left">
-				<ul>
-					<li>即日起~2018/5/13<br> 
-						第一階段書面報名 
-					</li>
-					<li>2018/6/3 <br>
-						初審 & 審查公布
-					</li>
-					<li>2018/6/30<br> 
-						第二階段面試複審
-					</li>
-					<li>
-						2018/7/4<br> 
-						第二階段複審錄取結果公佈
-					</li>
-					<li>2018/7/14<br> 
-						開幕式 + Monthly Meeting 
-					</li>
-					<li>2018/8/4 <br>
-						Monthly Meeting 
-					</li>
-					<li>2018/10/6<br> 
-						Monthly Meeting
-					</li>
-					<li>
-						2018/11/3<br> 
-						結業式
-					</li>
-				</ul>
+		<div class="nine_right">
+			<div class="nine_role">
+				<h4>船長 Captain （導師）</h4>
+				<h5>-每月Meetup中，分享自己經驗，協助航海士、水手開拓視野，給予產業、職涯大方向等建議</h5>
 			</div>
-			<div class="vl" height="1000px" >
+			<div class="nine_role">
+				<h4>航海士 Navigators （職場學姊）</h4>
+				<h5>-傾聽、給予水手職場實作上的過來人建議，協助水手在職涯初期需要的務實成長，培養自身領導管理能力；在船長的帶領之下，探索未來發展更多可能</h5>
 			</div>
-			<div class="four_right">
-				<ul>
-					<li>於招募期間，選定參加之組別，填寫並繳交報名文件。
-					</li>
-					<li>
-						主辦單位屆時公布第一階段書面審錄取名單。
-					</li>
-					<li>
-						通過第一階段審查者，攜帶相關證明，出席第二階段複審面試現場活動，由主辦單位安排與業師、學姊助教進行面談。
-					</li>
-					<li>
-						公布計畫錄取各組最終名單。
-						最終錄取者將可參與The MentorShip 曼陀號領航計畫。
-					</li>
-					<li> 開幕式 + Monthly Meeting<br>
-						場地費用 NT$450
-					</li>
-					<li>
-						Monthly Meeting 費用視場地而定，待公佈。
-						以假日為主，各組協調時間。
-					</li>
-					<li>
-						Monthly Meeting 費用視場地而定，待公佈。
-						以假日為主，各組協調時間。
-					</li>
-					<li>
-						結業式<br>
-						場地費用 NT$450
-					</li>
-				</ul>
-			</div>
-			<div class="icons">
-				<img src="{% static 'jpg/img_lifebuoy.jpg' %}">
+			<div class="nine_role">
+				<h4>水手 Sailors（導生）</h4>
+				<h5>-對自身發展有理想、希望能吸取前輩經驗，往目標更加努力；或對職涯發展略有迷惘，帶著切身問題和其他水手、以及前輩們交流</h5>
 			</div>
 		</div>
 	</div>
-
-
-	<div class="five" id="five">
-		<div class="four_title">
-			<img src="{% static 'jpg/ic_5.png' %}">
-			<h3>招募對象及參加資格</h3>
+</div>
+<article data-scrollmagic>
+	<div class="third" id="third">
+		<div class="third_title">
+			<h3>將由5位船長及航海士帶領水手們</h3>
 		</div>
-		<div class="five_content">
-			<div class="five_left">
-				<div class="five_left_left">
-					<h2>Sailors</h2>
-					<h6>水手 （導生）</h6>
+		<div class="people_container">
+			<div class="people" id="user_1">
+				<div class="people_title">
+					<h4>UX 使用者體驗設計</h4>
 				</div>
-				<div class="five_left_right">
-					<ul>
-						<li></li>
-						<li>·大四應屆畢業生</li>
-						<li>·研究生</li>
-						<li>·工作經驗2年內之職場人士</li>
-					</ul>
+				<div class="people_pho">
+					<img src="{% static 'jpg/user_1.jpg' %}">
 				</div>
-			</div>
-			<div class="five_right">
-				<div class="five_right_left">
-					<h2>Navigators</h2>
-					<h6>航海士 （職場前輩)</h6>
+				<div class="people_quote">
+					<h4>"以人為本，從用戶出發，才能打造擁有持久生命力的好產品。"</h4>
 				</div>
-				<div class="five_right_right">
-					<ul>
-						<li>·女性</li>
-						<li>·至少具備其中一組5年專業領域工作經驗 (工作總年資不限)</li>
-						<li>·具備提拔後進熱忱，樂意提供第一線實務協助者</li>
-						<li>·未來有興趣回饋女性科技社群者</li>
-					</ul>
+				<div class="people_name">
+					<h4>施子薇 Jill Shih</h4>
+				</div>
+				<div class="people_description">
+					<h6>專長："區塊鏈、產品使用者體驗、互聯網產品、軟體開發、跨國團隊管理</h6>
+				</div>
+				<div class="people_firm">
+					<a href="http://www.businessmodelsinc.com"><h5>COBINHOOD 執行長暨 DEXON Foundation 執行理事</h5></a>
 				</div>
 			</div>
+			<div class="people" id="user_1">
+				<div class="people_title">
+					<h4>UX 使用者體驗設計</h4>
+				</div>
+				<div class="people_pho">
+					<img src="{% static 'jpg/user_1.png' %}">
+				</div>
+				<div class="people_quote">
+					<h4>"UX design 是發掘並解決問題的手段, 是從宏觀到微觀的角度來檢視使用者體驗的思維, 是會讓人會心一笑並記住那美好時刻的良方"</h4>
+				</div>
+				<div class="people_name">
+					<h4>姚美玲 Ammy Yao</h4>
+				</div>
+				<div class="people_description">
+					<h6>專長："使用者研究、使用者經驗設計、互動設計、設計管理"</h6>
+				</div>
+				<div class="people_firm">
+					<a href="http://www.businessmodelsinc.com"><h5>"趨勢科技股份有限公司, Trend Micro 資深設計經理</h5></a>
+				</div>
+			</div>
+			<div class="people" id="user_1">
+				<div class="people_title">
+					<h4>Engineering 技術開發</h4>
+				</div>
+				<div class="people_pho">
+					<img src="{% static 'jpg/user_3.jpg' %}">
+				</div>
+				<div class="people_quote">
+					<h4>"工程的知識日新月異，要終身學習。"</h4>
+				</div>
+				<div class="people_name">
+					<h4>Jason Chuang</h4>
+				</div>
+				<div class="people_description">
+					<h6>專長："AI, Machine Learning, Big Data Analytics, Architecture"</h6>
+				</div>
+				<div class="people_firm">
+					<a href="http://www.businessmodelsinc.com"><h5>艾泉資訊 AI4quant 創辦人暨執行長</h5></a>
+				</div>
+
+			</div>
+			<div class="people" id="user_1">
+				<div class="people_title">
+					<h4>Data Application 數據整合應用</h4>
+				</div>
+				<div class="people_pho">
+					<img src="{% static 'jpg/user_4.jpg' %}">
+				</div>
+				<div class="people_quote">
+					<h4>"在凡事皆可被數據化的時代，應積極培養「數據識別」的能力，會洞悉不同數據的價值及真偽，以避免輕易被大量的雜訊所左右。"</h4>
+				</div>
+				<div class="people_name">
+					<h4>李杭 Nancy Lee</h4>
+				</div>
+				<div class="people_description">
+					<h6>專長："商業分析、網路行銷、平台策略、專案管理、客戶關係"</h6>
+				</div>
+				<div class="people_firm">
+					<a href="http://www.businessmodelsinc.com"><h5>萬峰策略 WhiteMaple Consulting 共同創辦人</h5></a>
+				</div>
+
+			</div>
+			<div class="people" id="user_1">
+				<div class="people_title">
+					<h4>Entrepreneur 創新領導力</h4>
+				</div>
+				<div class="people_pho">
+					<img src="{% static 'jpg/user_5.jpeg' %}">
+				</div>
+				<div class="people_quote">
+					<h4>"花時間認識自己跟世界 / Pay it forward。"</h4>
+				</div>
+				<div class="people_name">
+					<h4>邱懷萱 Elisa Chiu</h4>
+				</div>
+				<div class="people_description">
+					<h6>專長："International Business Development, Strategic Partnership, Business Strategy, Entrepreneurship"</h6>
+				</div>
+				<div class="people_firm">
+					<a href="http://www.businessmodelsinc.com"><h5>Anchor Taiwan 創辦人暨執行長</h5></a>
+				</div>
+
+			</div>
+			<div class="people" id="user_1">
+				<div class="people_title">
+					<h4>Business 商務開發</h4>
+				</div>
+				<div class="people_pho">
+					<img src="{% static 'jpg/user_1.png' %}">
+				</div>
+				<div class="people_quote">
+					<h4>"賦能 (Empower) 合作夥伴，實現規模化銷售與管理的技術創新，最終達成合作夥伴與客戶的雙贏、成長！"</h4>
+				</div>
+				<div class="people_name">
+					<h4>李芝禎 Jane Li</h4>
+				</div>
+				<div class="people_description">
+					<h6>專長："數位行銷與廣告業務、合作夥伴開發與管理、品牌策略溝通"</h6>
+				</div>
+				<div class="people_firm">
+					<a href="http://www.businessmodelsinc.com"><h5>萬峰策略 WhiteMaple Consulting 共同創辦人</h5></a>
+				</div>
+
+			</div>
+		</div>
+		<div>
+
 		</div>
 	</div>
+</article>
 
-	<div class="six">
-		<div class="six_title">
-			<img src="{% static 'jpg/ic_5.jpg' %}">
-			<h3>注意事項</h3>
-		</div>
-		<div class="six_content">
+<div class="four" id="four">
+	<div class="four_title">
+		<img src="{% static 'jpg/ic_5.jpg' %}">
+		<h3>活動辦法</h3>
+	</div>
+	<div class="four_content">
+		<div class="four_left">
 			<ul>
-				<li>為求活動交流與出席品質，計畫錄取者需於開幕式時繳交$2,000新台幣押金作為擔保，保證出勤次數符合主辦單位規定。如計畫期間出勤    
-					符合大會規定，押金將於結業式時全額退還。
+				<li>即日起~2019/4/14<br> 
+					第一階段書面報名 
 				</li>
-				<li>計劃參加者必須出席開幕式。結業式、與3次meet-up，如因故無法出席，需寫信向主辦單位請假，缺席2次未到者，主辦單位有權終止該員出  
-					席計畫後續活動，並沒收保證金。
+				<li>2019/5/5 <br>
+					初審 & 審查公布
 				</li>
-				<li>計劃參加者需同意主辦單位使用參加者本次活動照片與資料，作為活動文宣推廣，活動紀錄，以及行銷文宣使用。
+				<li>2019/5/18 <br> 
+					第二階段面試複審
 				</li>
-				<li>主辦單位保有隨時修改及終止本活動之權利，如有任何變更內容或詳細注意事項將公布於計畫粉絲專頁，恕不另行個別通知。
+				<li>
+					2019/5/22<br> 
+					第二階段複審錄取結果公佈
 				</li>
+<!-- 				<li>2018/7/14<br> 
+					開幕式 + Monthly Meeting 
+				</li>
+				<li>2018/8/4 <br>
+					Monthly Meeting 
+				</li>
+				<li>2018/10/6<br> 
+					Monthly Meeting
+				</li>
+				<li>
+					2018/11/3<br> 
+					結業式
+				</li> -->
 			</ul>
 		</div>
-		<div class="seven">
-			<div class="top">
-				<div class="seven_top_img">
-					<img src="{% static 'jpg/img_lighthouse.png' %}" height="300px">
-				</div>
-				<div class="seven_title">
-					<h3>第一屆曼陀號領航計畫<br>
-						The MentorShip Program 
-					</h3>
-				</div>
-				<div class="seven_btn">
-					<a href="https://www.facebook.com/The-MentorShip-%E6%9B%BC%E9%99%80%E8%99%9F%E9%A0%98%E8%88%AA%E8%A8%88%E7%95%AB-127497411432339/"><button>加入粉專 ></button></a>
-				</div>
+		<div class="vl" height="1000px" >
+		</div>
+		<div class="four_right">
+			<ul>
+				<li>於招募期間，選定參加之組別，填寫並繳交報名文件。
+				</li>
+				<li>
+					主辦單位屆時公布第一階段書面審錄取名單。
+				</li>
+				<li>
+					通過第一階段審查者，請預留於5/18下午13:00 - 17:00 出席第二階段複審面試現場活動，將由主辦單位安排與導師、學姊助教進行面談與審核。
+				</li>
+				<li>
+					公布計畫錄取各組最終名單。
+					最終錄取者將可參與The MentorShip 曼陀號領航計畫。
+				</li>
+<!-- 				<li> 開幕式 + Monthly Meeting<br>
+					場地費用 NT$450
+				</li>
+				<li>
+					Monthly Meeting 費用視場地而定，待公佈。
+					以假日為主，各組協調時間。
+				</li>
+				<li>
+					Monthly Meeting 費用視場地而定，待公佈。
+					以假日為主，各組協調時間。
+				</li>
+				<li>
+					結業式<br>
+					場地費用 NT$450
+				</li> -->
+			</ul>
+		</div>
+		<div class="icons">
+			<img src="{% static 'jpg/img_lifebuoy.jpg' %}">
+		</div>
+	</div>
+</div>
+
+
+<div class="five" id="five">
+	<div class="four_title">
+		<img src="{% static 'jpg/ic_5.png' %}">
+		<h3>招募對象及參加資格</h3>
+	</div>
+	<div class="five_content">
+		<div class="five_left">
+			<div class="five_left_left">
+				<h2>Sailors</h2>
+				<h6>水手 （導生）</h6>
+				<button>報名水手</button>
+			</div>
+			<div class="five_left_right">
+				<ul>
+					<li></li>
+					<li>·工作經驗1-3年內職場新鮮人 (含實習經驗)</li>
+				</ul>
 			</div>
 		</div>
-		<div class="eight" id="right">
-			<div class="eight_title">
-				<h3>主辦單位聯絡方式</h3>
+		<div class="five_right">
+			<div class="five_right_left">
+				<h2>Navigators</h2>
+				<h6>航海士 （職場前輩)</h6>	
+				<button>報名航海士 </button>
+
 			</div>
-			<div class="eight_content">
-				<div class="eight_left">
-					<div class="eight_left_title">
-						<h5>GIT Taiwan</h5>
-						<a href="https://www.facebook.com/girlsintechtaiwan/"><img src="{% static 'jpg/bt_fb.jpg' %}"></a>
-					</div>
+			<div class="five_right_right">
+				<ul>
+					<li>·至少具有3-6年以上申請的組別領域專業工作經驗</li>
+					<li>·具備提拔後進熱忱，樂意提供第一線實務協助者</li>
+					<li>·未來有興趣回饋女性科技社群者</li>
+					<li>·錄取者以女性優先</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="ele" id="ele">
+	<div class="four_title">
+		<img src="{% static 'jpg/ic_5_white.png' %}">
+		<h3 style="color: white;">歷屆活動相簿</h3>
+	</div>
+	<div class="five_content">
+		<div class="ele_left" style="background-image: url({% static 'jpg/nine_bg.png' %})">
+		</div>
+		<div class="ele_right" style="background-image: url({% static 'jpg/nine_bg.png' %})">
+		</div>
+	</div>
+</div>
 
-					<div class="eight_left_content">
-						<h6>taiwanchapter@girlsintech.org</h6>
-					</div>
-
+<div class="six">
+	<div class="six_title">
+		<img src="{% static 'jpg/ic_5.jpg' %}">
+		<h3>注意事項</h3>
+	</div>
+	<div class="six_content">
+		<ul>
+			<li>為求活動交流與出席品質，計畫錄取者需於開幕式時繳交$2,000新台幣押金作為擔保，保證出勤次數符合主辦單位規定。如計畫期間出勤    
+				符合大會規定，押金將於結業式時全額退還。
+			</li>
+			<li>計劃參加者必須出席開幕式。結業式、與3次meet-up，如因故無法出席，需寫信向主辦單位請假，缺席2次未到者，主辦單位有權終止該員出  
+				席計畫後續活動，並沒收保證金。
+			</li>
+			<li>計劃參加者需同意主辦單位使用參加者本次活動照片與資料，作為活動文宣推廣，活動紀錄，以及行銷文宣使用。
+			</li>
+			<li>主辦單位保有隨時修改及終止本活動之權利，如有任何變更內容或詳細注意事項將公布於計畫粉絲專頁，恕不另行個別通知。
+			</li>
+		</ul>
+	</div>
+	<div class="seven">
+		<div class="top">
+			<div class="seven_top_img">
+				<img src="{% static 'jpg/img_lighthouse.png' %}" height="300px">
+			</div>
+			<div class="seven_title">
+				<h3>第一屆曼陀號領航計畫<br>
+					The MentorShip Program 
+				</h3>
+			</div>
+			<div class="seven_btn">
+				<a href="https://www.facebook.com/The-MentorShip-%E6%9B%BC%E9%99%80%E8%99%9F%E9%A0%98%E8%88%AA%E8%A8%88%E7%95%AB-127497411432339/"><button>加入粉專 ></button></a>
+			</div>
+		</div>
+	</div>
+	<div class="eight" id="right">
+		<div class="eight_title">
+			<h3>主辦單位聯絡方式</h3>
+		</div>
+		<div class="eight_content">
+			<div class="eight_left">
+				<div class="eight_left_title">
+					<h5>GIT Taiwan</h5>
+					<a href="https://www.facebook.com/girlsintechtaiwan/"><img src="{% static 'jpg/bt_fb.jpg' %}"></a>
 				</div>
-				<div class="eight_right">
-					<div class="eight_right_title">
-						<h5>LTUX. Taipei</h5>
-						<a href="https://www.facebook.com/ltuxtaipei/"><img src="{% static 'jpg/bt_fb.jpg' %}"></a>
-					</div>
-					<div class="eight_right_content">
-						<h6>ltuxtaipei@gmail.com</h6>
-					</div>
+
+				<div class="eight_left_content">
+					<h6>taiwanchapter@girlsintech.org</h6>
+				</div>
+
+			</div>
+			<div class="eight_right">
+				<div class="eight_right_title">
+					<h5>LTUX. Taipei</h5>
+					<a href="https://www.facebook.com/ltuxtaipei/"><img src="{% static 'jpg/bt_fb.jpg' %}"></a>
+				</div>
+				<div class="eight_right_content">
+					<h6>ltuxtaipei@gmail.com</h6>
 				</div>
 			</div>
 		</div>
 	</div>
+</div>
 
 </div>
 </body>
