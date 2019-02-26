@@ -307,6 +307,13 @@ html, body {
 .ele {
 	height: 500px;
 }
+
+.ele_content{
+	display: flex;
+	justify-content: space-around;
+	padding-bottom: 5rem;
+	margin-top: 3rem;"
+}
 .thirdteen {
 	height: auto;
 }
@@ -804,13 +811,13 @@ html, body {
 }
 
 .eight_content{
-	padding-left: 10rem;
-	display: flex;
-	margin-right: 5rem;
-	margin-left: 5rem;
-	padding-right: 5rem;
-	padding-left: 5rem;
-	justify-content:space-around;
+    /* padding-left: 10rem; */
+    display: flex;
+    /* margin-right: 5rem; */
+    margin-left: 4rem;
+    /* padding-right: 5rem; */
+    /* padding-left: 5rem; */
+    justify-content: baseline;
 }
 
 .eight_left_title > h5,.eight_right_title > h5{
@@ -843,7 +850,7 @@ html, body {
 .eight_left, .eight_right{
 	display: block;
 	margin: 2rem;
-	margin-right: 10rem;
+/*	margin-right: 10rem;*/
 }
 .nine{
 	background-image: url("nine_bg.png");
@@ -1237,6 +1244,14 @@ li {
 @media only screen and (max-width: 500px)  {
 	.nine{
 		display: none;
+	}
+
+	.ele {
+		height: 300px;
+	}
+
+	.ele_content{
+		margin-top: 2rem;
 	}
 
 	.people_title{

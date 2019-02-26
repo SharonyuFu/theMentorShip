@@ -60,7 +60,7 @@
 					</button></a>
 				</li>
 				<li class="nav_item">
-					<a href="#first"><button id="home_btn" type="button" class="item" aria-haspopup="true" aria-expanded="false" aria-busy="false">
+					<a href="#eight"><button id="home_btn" type="button" class="item" aria-haspopup="true" aria-expanded="false" aria-busy="false">
 						<div class="item_con">贊助夥伴</div>	
 					</button></a>
 				</li>
@@ -453,11 +453,9 @@
 		<img src="{% static 'jpg/ic_5_white.png' %}">
 		<h3 style="color: white;">歷屆活動相簿</h3>
 	</div>
-	<div class="five_content">
-		<div class="ele_left" style="background-image: url({% static 'jpg/nine_bg.png' %})">
-		</div>
-		<div class="ele_right" style="background-image: url({% static 'jpg/nine_bg.png' %})">
-		</div>
+	<div class="ele_content" >
+		<img src="/static/jpg/left_photo.JPG" style="height: -webkit-fill-available;width: 50%">
+		<img src="/static/jpg/right_photo.JPG" style="height: -webkit-fill-available;width: 50%;">
 	</div>
 </div>
 <div class="twe">
@@ -626,35 +624,78 @@
 		</div>
 	</div>
 </div>
-<div class="eight" id="right">
+<div class="eight" id="eight">
+	<div style="display: flex;">
+		<div style="width: 50%; display: block;"> 
+			<div class="eight_title">
+				<h3>場地贊助</h3>
+			</div>
+			<div style="display: flex; margin-left: 5rem; margin-top: 2rem; justify-content: space-around;">
+				<img src="{% static 'jpg/logo_left_right_1.png'%}" style="width: 7rem;height: 5rem;">
+				<img src="{% static 'jpg/logo_left_2.png'%}" style="width: 5rem;height: 5rem; ">
+				<img src="{% static 'jpg/logo_left_3.png'%}" style="width: 6.5rem;height: 6.5rem; ">
+			</div>
+		</div>
+		<div style="width: 50%; display: block;"> 
+			<div class="eight_title">
+				<h3>媒體贊助</h3>
+			</div>
+			<div style="display: flex; margin-left: 5rem; margin-top: 2rem; justify-content: space-around;">
+				<img src="{% static 'jpg/logo_left_right_1.png'%}" style="width: 7rem;height: 5rem;">
+				
+			</div>
+		</div>
+	</div>
 	<div class="eight_title">
-		<h3>主辦單位聯絡方式</h3>
+		<h3>官方聯繫方式</h3>
 	</div>
 	<div class="eight_content">
-		<div class="eight_left">
-			<div class="eight_left_title">
-				<h5>GIT Taiwan</h5>
-				<a href="https://www.facebook.com/girlsintechtaiwan/"><img src="{% static 'jpg/bt_fb.jpg' %}"></a>
-			</div>
+		<div class="eight_left" style="display: flex; width: 50%;">
+			<img src="{% static 'jpg/Mentor_logo.png'%}" style="width: 6.5rem;height: 6.5rem; margin-right: 1rem;">
+			<div style="display: block;">
+				<div class="eight_left_title" style="margin-bottom: .8rem;">
+					<h5>The MentorShip Taiwan</h5>
+					<a href="https://www.facebook.com/The-MentorShip-%E6%9B%BC%E9%99%80%E8%99%9F%E9%A0%98%E8%88%AA%E8%A8%88%E7%95%AB-127497411432339/"><img src="/static/jpg/bt_fb.jpg"></a>
+				</div>
 
-			<div class="eight_left_content">
-				<h6>taiwanchapter@girlsintech.org</h6>
-			</div>
-
-		</div>
-		<div class="eight_right">
-			<div class="eight_right_title">
-				<h5>LTUX. Taipei</h5>
-				<a href="https://www.facebook.com/ltuxtaipei/"><img src="{% static 'jpg/bt_fb.jpg' %}"></a>
-			</div>
-			<div class="eight_right_content">
-				<h6>ltuxtaipei@gmail.com</h6>
+				<div class="eight_left_content">
+					<h6>thementorshiptaiwan@gmail.com</h6>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
-</div>
 
+
+	<div class="eight_title">
+		<h3>主辦單位</h3>
+	</div>
+	<div class="eight_content">
+		<div class="eight_left" style="display: flex; width: 50%;">
+			<img src="{% static 'jpg/GIT_logo.png'%}" style="width: 6.5rem;height: 6.5rem; margin-right: 1rem;">
+			<div style="display: block;">
+				<div class="eight_left_title" style="margin-bottom: .8rem;">
+					<h5>GIT Taiwan</h5>
+					<a href="https://www.facebook.com/girlsintechtaiwan/"><img src="/static/jpg/bt_fb.jpg"></a>
+				</div>
+
+				<div class="eight_left_content">
+					<h6>全球女性科技社群</h6>
+				</div>
+			</div>
+		</div>
+		<div class="eight_right" style="display: flex;">
+			<img src="/static/jpg/Ladies_That_UX_Taipei.jpg" style="width: 7rem;height: 7rem;">
+			<div style="display: block;">
+				<div class="eight_right_title" style="margin-bottom: .8rem;">
+					<h5>LTUX. Taipei</h5>
+					<a href="https://www.facebook.com/ltuxtaipei/"><img src="/static/jpg/bt_fb.jpg"></a>
+				</div>
+				<div class="eight_right_content">
+					<h6>全球女性使用者體驗設計社群</h6>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 </body>
 </html>
