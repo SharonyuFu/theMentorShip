@@ -1297,6 +1297,7 @@ li {
 
 .faq-question {
 	padding: .5rem 0;
+	position: relative;
 	/*  border-bottom: 1px dotted #ccc;*/
 }
 
