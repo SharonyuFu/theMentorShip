@@ -144,8 +144,9 @@ html, body {
 .first{
 	background: white;
 	background-image: url("jpg/bg_keyvision.jpg");
-	height: 800px;
+	height: auto;
 	margin-top: 3%;
+	padding-bottom: 2rem;
 	
 }
 
@@ -193,9 +194,10 @@ html, body {
 
 .second{
 	margin: 0 auto; 
-	height: 1050px;
+	height: auto;
 	background-color: #fdfdfd;
 	margin-top: -2rem;
+	padding-bottom: 2rem;
 
 }
 
@@ -234,7 +236,8 @@ html, body {
 	display: flex;
 	width: 22rem;
 	margin: 2%;
-	height: 16.54rem;
+	/*height: 16.54rem;*/
+	height: auto;
 	border-radius: 6px;
 	background-color: #ffffff;
 	box-shadow: 24px 24px 71px 0 rgba(2, 8, 22, 0.1);
@@ -297,15 +300,19 @@ html, body {
 }
 
 .third{
-	height: 1450px;
+	/*height: 1450px;*/
+	height: auto;
 	margin-top: -2rem;
+
 }
 .third, .ele, .thirdteen {
 	background: #090e3e;
+	padding-bottom: 2rem;
 }
 
 .ele {
-	height: 500px;
+	/*height: 500px;*/
+	height: auto;
 }
 
 .ele_content{
@@ -442,12 +449,14 @@ html, body {
 
 .four{
 	background-color: white;
-	height: 800px;
+	/*height: 800px;*/
+	height: auto;
 }
 
 .ten{
 	background-color: #111743;
-	height: 650px;
+	/*height: 650px;*/
+	height: auto;
 	margin-top: -2rem;
 }
 .four_content, .ten_content{
@@ -549,7 +558,8 @@ html, body {
 	background-color: #efefef;
 	margin-top: -0.2rem;
 	padding-top: 2rem;
-	height: 500px;
+	height: auto;
+	padding-bottom: 2rem;
 }
 
 .five_title > img, .four_title > img,.six_title > img ,.ten_title > img{
@@ -576,7 +586,7 @@ html, body {
 	padding-top: 3rem;
 	font-size: 1.5rem;
 	color: #081167;
-	width: 20%;
+	width: 25%;
 	margin: 0;
 	position: relative;
 	
@@ -688,7 +698,9 @@ html, body {
 .six{
 	margin-top: -1rem;
 	background-color: white;
-	height: 360px;
+	/*height: 360px;*/
+	height: auto;
+	padding-bottom: 1rem;
 	padding-bottom: 4rem;
 }
 
@@ -742,7 +754,9 @@ html, body {
 }
 
 .seven{
-	height: 300px;
+	/*height: 300px;*/
+	height: auto;
+	padding-bottom: 1rem;
 	background: #092056;
 	color: white;
 }
@@ -756,7 +770,9 @@ html, body {
 }
 
 .eight{
-	height: 800px;
+	/*height: 800px;*/
+	height: auto;
+	padding-bottom: 1rem;
 	background: white;
 }
 
@@ -855,7 +871,9 @@ html, body {
 .nine{
 	background-image: url("nine_bg.png");
 	background-size: 100% 100%;
-	height: 700px;
+	/*height: 700px;*/
+	height: auto;
+	padding-bottom: 1rem;
 	background-repeat: no-repeat;
 	margin-top: -2rem;
 }
@@ -974,7 +992,6 @@ h2,h3{
 	margin-bottom: .5rem;
 }
 .first{
-	height: 400px;
 	margin-top: 2rem;
 	background-size: cover;
 }
@@ -1030,7 +1047,9 @@ li {
 }
 
 .four{
-	height: 680px;
+	/*height: 680px;*/
+	height: auto;
+	padding-bottom: 1rem;
 }
 
 .vl{
@@ -1049,12 +1068,11 @@ li {
 }
 .second {
 	margin: 0 auto;
-	height: 2050px;
+	/*height: 2050px;*/
+	height: auto;
+	padding-bottom: 1rem;
 }
 
-.third {
-	height: 3000px;
-}
 
 .people {
 	width: 70%;
@@ -1106,8 +1124,9 @@ li {
 	display: none;
 }
 .five{
-	padding: 0rem;
-	height: 700px;
+	/*padding: 0rem;*/
+	/*height: 700px;*/
+
 }
 .five_content{
 	margin-top: 0rem;
