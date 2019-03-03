@@ -743,6 +743,7 @@ html, body {
 	border-radius: 5px;
 	width: 7.8rem;
 	height: 3rem;
+	padding-bottom: 2rem;
 	background-image: linear-gradient(250deg, #fa2b56, #f91c3d);
 	margin-bottom: 1rem;
 	cursor: pointer;
@@ -754,11 +755,12 @@ html, body {
 }
 
 .seven{
-	/*height: 300px;*/
-	height: auto;
+	height: 300px;
+	/*height: auto;*/
 	padding-bottom: 1rem;
 	background: #092056;
 	color: white;
+	padding-bottom: 2rem;
 }
 
 .seven > .top{
