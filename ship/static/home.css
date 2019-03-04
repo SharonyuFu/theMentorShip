@@ -146,7 +146,7 @@ html, body {
 	background-image: url("jpg/bg_keyvision.jpg");
 	height: auto;
 	margin-top: 3%;
-	padding-bottom: 2rem;
+	padding-bottom: 8rem;
 	
 }
 
@@ -307,7 +307,7 @@ html, body {
 }
 .third, .ele, .thirdteen {
 	background: #090e3e;
-	padding-bottom: 2rem;
+	padding-bottom: 5rem;
 }
 
 .ele {
@@ -431,7 +431,7 @@ html, body {
 	text-align: center;
 	color: #709be7; 
 }
-.people_firm > a > h5{
+.people_firm > a > h4{
 	color: #709be7; 
 	cursor: pointer;
 	text-decoration: none;
@@ -443,9 +443,9 @@ html, body {
 }
 
 
-.people_firm > a > h5:hover{
+/*.people_firm > a > h4:hover{
 	color: grey; 
-}
+}*/
 
 .four{
 	background-color: white;
@@ -811,6 +811,7 @@ html, body {
 	position: relative;
 	height: 300px;
 	width: 300px;
+	margin-left: 4rem;
 }
 .eight{
 	height: 300px;
@@ -891,7 +892,7 @@ html, body {
 	padding-top: 1rem;
 }
 .nine_right{
-	width: 50%;
+	width: 42%;
 }
 
 .nine_role > h5,.nine_role > h4{
@@ -915,12 +916,12 @@ html, body {
 }
 .nine_role:nth-child(1){
 	padding-top: 6rem;
-	margin-bottom: 2rem;
+	margin-bottom: 1.2rem;
 }
 
 .nine_role:nth-child(2){
-	padding-top: 2rem;
-	margin-bottom: 3rem;
+padding-top: 1.2rem;
+    margin-bottom: 2rem;
 }
 
 @media only screen and (max-width: 1180px) {
