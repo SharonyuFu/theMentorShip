@@ -25,332 +25,347 @@
 	</script>
 
 	<link rel="shortcut icon" type="image/x-icon" href="{% static 'jpg/logo_2.png' %}" />
+	<script>
+		!function(f,b,e,v,n,t,s)
+		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+			n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+			if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+			n.queue=[];t=b.createElement(e);t.async=!0;
+			t.src=v;s=b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t,s)}(window, document,'script',
+				'https://connect.facebook.net/en_US/fbevents.js');
+			fbq('init', '2239529726299927');
+			fbq('track', 'PageView');
+		</script>
+		<noscript><img height="1" width="1" style="display:none"
+			src="https://www.facebook.com/tr?id=2239529726299927&ev=PageView&noscript=1"
+			/></noscript>
 
-</head>
-<body>
-	<div class="nav">	
-		<div class="logo">
-			<img src="{% static 'jpg/logo.png' %}" height="20px">
-		</div>	
-		<div class="menu">
-			<ul>	
-				<li class="nav_item">
-					<a href="#second"><button type="button" class="item" aria-haspopup="true" aria-expanded="false" aria-busy="false" onclick="">
-						<div class="item_con">計畫詳情</div>	
-					</button></a>
-				</li>
-				<li class="nav_item">
-					<a href="#third"><button type="button" class="item" aria-haspopup="true" aria-expanded="false" aria-busy="false" onclick="#third">
-						<div class="item_con">領航船長</div>	
-					</button></a>
-				</li>
-				<li class="nav_item">
-					<a href="#five"><button type="button" class="item" aria-haspopup="true" aria-expanded="false" aria-busy="false">
-						<div class="item_con">報名資格</div>	
-					</button></a>
-				</li>
-				<li class="nav_item">
-					<a href="#ele"><button id="home_btn" type="button" class="item" aria-haspopup="true" aria-expanded="false" aria-busy="false">
-						<div class="item_con">歷屆活動</div>	
-					</button></a>
-				</li>
-				<li class="nav_item">
-					<a href="#thirdteen"><button id="home_btn" type="button" class="item" aria-haspopup="true" aria-expanded="false" aria-busy="false">
-						<div class="item_con">FAQ</div>	
-					</button></a>
-				</li>
-				<li class="nav_item">
-					<a href="#eight"><button id="home_btn" type="button" class="item" aria-haspopup="true" aria-expanded="false" aria-busy="false">
-						<div class="item_con">贊助夥伴</div>	
-					</button></a>
-				</li>
-			</ul>
-		</div>
-	</div>
-	
-	<div class="first" id="first">
-		<div class="first_content">
-			<div class="first_title">
-				<h2>第二屆曼陀號領航計畫</h2>				
-				<h2>The MentorShip Program </h2>
-			</div>
-			<div class="first_btn" style="displatnone">
-				<a href="#five"><button>立即報名 > </button></a>
-			</div>
-			<div class="logos_frame">
-				<div class="logos">
-					<a href="https://www.facebook.com/thementorshiptaiwan">
-						<img src="{% static 'jpg/Mentor_logo.png'%}">
-					</a>
-				</div>
-				<div class="logos">
-					<img src="{% static 'jpg/GIT_logo.png'%}">
-				</div>
-				<div class="logos">
-					<img src="{% static 'jpg/Ladies_That_UX_Taipei.jpg'%}">
+		</head>
+		<body>
+			<div class="nav">	
+				<div class="logo">
+					<img src="{% static 'jpg/logo.png' %}" height="20px">
+				</div>	
+				<div class="menu">
+					<ul>	
+						<li class="nav_item">
+							<a href="#second"><button type="button" class="item" aria-haspopup="true" aria-expanded="false" aria-busy="false" onclick="">
+								<div class="item_con">計畫詳情</div>	
+							</button></a>
+						</li>
+						<li class="nav_item">
+							<a href="#third"><button type="button" class="item" aria-haspopup="true" aria-expanded="false" aria-busy="false" onclick="#third">
+								<div class="item_con">領航船長</div>	
+							</button></a>
+						</li>
+						<li class="nav_item">
+							<a href="#five"><button type="button" class="item" aria-haspopup="true" aria-expanded="false" aria-busy="false">
+								<div class="item_con">報名資格</div>	
+							</button></a>
+						</li>
+						<li class="nav_item">
+							<a href="#ele"><button id="home_btn" type="button" class="item" aria-haspopup="true" aria-expanded="false" aria-busy="false">
+								<div class="item_con">歷屆活動</div>	
+							</button></a>
+						</li>
+						<li class="nav_item">
+							<a href="#thirdteen"><button id="home_btn" type="button" class="item" aria-haspopup="true" aria-expanded="false" aria-busy="false">
+								<div class="item_con">FAQ</div>	
+							</button></a>
+						</li>
+						<li class="nav_item">
+							<a href="#eight"><button id="home_btn" type="button" class="item" aria-haspopup="true" aria-expanded="false" aria-busy="false">
+								<div class="item_con">贊助夥伴</div>	
+							</button></a>
+						</li>
+					</ul>
 				</div>
 			</div>
-		</div>
-	</div>
-
-	<article data-scrollmagic>
-		<div class="second" id="second">
-			<div class="second_top">
-				<div class="second_title">
-					<h3>曼陀號領航計畫</h3>
-				</div>
-				<div class="second_content">
-					<p>台灣致力推廣女性於科技業和使用者體驗發展的兩大非營利組織：Girls In Tech 與 Ladies that UX 台北分會，共同舉辦「The MentorShip 曼陀號領航計畫」（非獨立組織計畫）。
-						本計畫所有人員皆以志工形式參與，整體活動時程為期四個月，將邀請各領域知名專家擔任小組船長 (Mentor)，分組舉行實體聚會。透過船長的專業分享與經驗傳承，幫助水手 (Mentee) 縮短職涯摸索的成本，突破職涯上的瓶頸與挑戰，成為科技女性領袖人才。水手們來自各個產業與職位，帶著共同的職涯目標與各自碰到的問題，透過計畫分享與串聯，幫助彼此互相學習成長，一起打造開放互惠的女性科技社群。
-
-					</p>
-				</div>
-			</div>
-			<div class="second_bottom">
-				<div class="second_block">
-					<div class="block_left">
-						<img src="{% static 'jpg/ic_1.jpg' %}" height="60px">
+			
+			<div class="first" id="first">
+				<div class="first_content">
+					<div class="first_title">
+						<h2>第二屆曼陀號領航計畫</h2>				
+						<h2>The MentorShip Program </h2>
 					</div>
-					<div class="block_right">
-						<div class="block_title">
-							<h5>人脈串連</h5>
+					<div class="first_btn" style="displatnone">
+						<a href="#five"><button>立即報名 > </button></a>
+					</div>
+					<div class="logos_frame">
+						<div class="logos">
+							<a href="https://www.facebook.com/thementorshiptaiwan">
+								<img src="{% static 'jpg/Mentor_logo.jpg'%}">
+							</a>
 						</div>
-						<div class="block_content">
-							<p>
-								除了工作能力，職場上更不可或缺的專業力即是「人脈」。透過參與活動、相互交流，建立屬於你的人脈網，不僅增加工作上互助的好夥伴，更是為自己提高職場即戰力。
+						<div class="logos">
+							<img src="{% static 'jpg/GIT_logo.png'%}">
+						</div>
+						<div class="logos">
+							<img src="{% static 'jpg/Ladies_That_UX_Taipei.jpg'%}">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<article data-scrollmagic>
+				<div class="second" id="second">
+					<div class="second_top">
+						<div class="second_title">
+							<h3>曼陀號領航計畫</h3>
+						</div>
+						<div class="second_content">
+							<p>台灣致力推廣女性於科技業和使用者體驗發展的兩大非營利組織：Girls In Tech 與 Ladies that UX 台北分會，共同舉辦「The MentorShip 曼陀號領航計畫」（非獨立組織計畫）。
+								本計畫所有人員皆以志工形式參與，整體活動時程為期四個月，將邀請各領域知名專家擔任小組船長 (Mentor)，分組舉行實體聚會。透過船長的專業分享與經驗傳承，幫助水手 (Mentee) 縮短職涯摸索的成本，突破職涯上的瓶頸與挑戰，成為科技女性領袖人才。水手們來自各個產業與職位，帶著共同的職涯目標與各自碰到的問題，透過計畫分享與串聯，幫助彼此互相學習成長，一起打造開放互惠的女性科技社群。
+
 							</p>
 						</div>
 					</div>
-				</div>
-				<div class="second_block">
-					<div class="block_left">
-						<img src="{% static 'jpg/ic_2.jpg' %}" height="60px">
-					</div>
-					<div class="block_right">
-						<div class="block_title">
-							<h5>知識傳承</h5>
+					<div class="second_bottom">
+						<div class="second_block">
+							<div class="block_left">
+								<img src="{% static 'jpg/ic_1.jpg' %}" height="60px">
+							</div>
+							<div class="block_right">
+								<div class="block_title">
+									<h5>人脈串連</h5>
+								</div>
+								<div class="block_content">
+									<p>
+										除了工作能力，職場上更不可或缺的專業力即是「人脈」。透過參與活動、相互交流，建立屬於你的人脈網，不僅增加工作上互助的好夥伴，更是為自己提高職場即戰力。
+									</p>
+								</div>
+							</div>
 						</div>
-						<div class="block_content">
-							<p>
-								經驗是最難得的老師，更是最寶貴的知識！讓前輩帶領你深入了解業界需求，並分享專業路上的各種碰撞及成功經驗，是珍貴且無價的人生講堂。
-							</p>
+						<div class="second_block">
+							<div class="block_left">
+								<img src="{% static 'jpg/ic_2.jpg' %}" height="60px">
+							</div>
+							<div class="block_right">
+								<div class="block_title">
+									<h5>知識傳承</h5>
+								</div>
+								<div class="block_content">
+									<p>
+										經驗是最難得的老師，更是最寶貴的知識！讓前輩帶領你深入了解業界需求，並分享專業路上的各種碰撞及成功經驗，是珍貴且無價的人生講堂。
+									</p>
+								</div>
+							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-			<div class="second_bottom">
-				<div class="second_block">
-					<div class="block_left">
-						<img src="{% static 'jpg/ic_3.jpg' %}" height="60px">
+					<div class="second_bottom">
+						<div class="second_block">
+							<div class="block_left">
+								<img src="{% static 'jpg/ic_3.jpg' %}" height="60px">
 
-					</div>
-					<div class="block_right">
-						<div class="block_title">
-							<h5>開發啟蒙</h5>
+							</div>
+							<div class="block_right">
+								<div class="block_title">
+									<h5>開發啟蒙</h5>
+								</div>
+								<div class="block_content">
+									<p>
+										對未來發展感到迷茫，不確定自己的下一步，或許是你還不夠了解自己。經由與夥伴相互學習、合作，接觸不同的專業領域，發掘自己的可能性，為職涯打造更多的機會。
+									</p>
+								</div>
+							</div>
 						</div>
-						<div class="block_content">
-							<p>
-								對未來發展感到迷茫，不確定自己的下一步，或許是你還不夠了解自己。經由與夥伴相互學習、合作，接觸不同的專業領域，發掘自己的可能性，為職涯打造更多的機會。
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="second_block">
-					<div class="block_left">
-						<img src="{% static 'jpg/ic_4.jpg' %}" height="60px">
-					</div>
-					<div class="block_right">
-						<div class="block_title">
-							<h5>專業研習</h5>
-						</div>
-						<div class="block_content">
-							<p>
-								職涯目標明確、意志堅定，但如何讓自己更進一步？職場業師指點迷津，領導你了解向上發展的必要條件，確立目標，往更精進自己的航道無畏前行。 
-							</p>
+						<div class="second_block">
+							<div class="block_left">
+								<img src="{% static 'jpg/ic_4.jpg' %}" height="60px">
+							</div>
+							<div class="block_right">
+								<div class="block_title">
+									<h5>專業研習</h5>
+								</div>
+								<div class="block_content">
+									<p>
+										職涯目標明確、意志堅定，但如何讓自己更進一步？職場業師指點迷津，領導你了解向上發展的必要條件，確立目標，往更精進自己的航道無畏前行。 
+									</p>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</div>
-</article>
-<div class="nine" id="nine" style="background-image: url({% static 'jpg/nine_bg.png' %})">
-	<div class="nine_title">
-		<h3>導師制度</h3>
-	</div>
-	<div class="nine_content">
-		<div class="nine_right">
-			<img src="{% static 'jpg/line_tri.png' %}" height="600px">
-		</div>
-		<div class="nine_right">
-			<div class="nine_role">
-				<h4>船長 Captain （導師）</h4>
-				<h5>-每月Meetup中，分享自己經驗，協助航海士、水手開拓視野，給予產業、職涯大方向等建議</h5>
+		</article>
+		<div class="nine" id="nine" style="background-image: url({% static 'jpg/nine_bg.png' %})">
+			<div class="nine_title">
+				<h3>導師制度</h3>
 			</div>
-			<div class="nine_role">
-				<h4>航海士 Navigators （職場學姊）</h4>
-				<h5>-傾聽、給予水手職場實作上的過來人建議，協助水手在職涯初期需要的務實成長，培養自身領導管理能力；在船長的帶領之下，探索未來發展更多可能</h5>
-			</div>
-			<div class="nine_role">
-				<h4>水手 Sailors（導生）</h4>
-				<h5>-對自身發展有理想、希望能吸取前輩經驗，往目標更加努力；或對職涯發展略有迷惘，帶著切身問題和其他水手、以及前輩們交流</h5>
-			</div>
-		</div>
-	</div>
-</div>
-<article data-scrollmagic>
-	<div class="third" id="third">
-		<div class="third_title">
-			<h3>將由6位船長及航海士帶領水手們</h3>
-		</div>
-		<div class="people_container">
-			<div class="people" id="user_1">
-				<div class="people_title">
-					<h4>Business 商務開發</h4>
+			<div class="nine_content">
+				<div class="nine_right">
+					<img src="{% static 'jpg/line_tri.png' %}" height="600px">
 				</div>
-				<div class="people_pho">
-					<img src="{% static 'jpg/user_6.png' %}">
-				</div>
-				<div class="people_quote">
-					<h4>賦能 (Empower) 合作夥伴，實現規模化銷售與管理的技術創新，最終達成合作夥伴與客戶的雙贏、成長！</h4>
-				</div>
-				<div class="people_name">
-					<a href="" target="_blank"><h4>李芝禎 Jane Li</h4></a>
-				</div>
-				<div class="people_firm">
-					<a><h4>Google 大中華區經銷通路業務總監</h4></a>
-				</div>
-				<div class="people_description">
-					<h4>專長："數位行銷與廣告業務、合作夥伴開發與管理、品牌策略溝通"</h4>
-				</div>
-			</div>
-			<div class="people" id="user_1">
-				<div class="people_title">
-					<h4>Data Application 數據整合應用</h4>
-				</div>
-				<div class="people_pho">
-					<img src="{% static 'jpg/user_4.jpg' %}">
-				</div>
-				<div class="people_quote">
-					<h4>在凡事皆可被數據化的時代，應積極培養「數據識別」的能力，會洞悉不同數據的價值及真偽，以避免輕易被大量的雜訊所左右。</h4>
-				</div>
-				<div class="people_name">
-					<a href="https://www.linkedin.com/in/nancy-hang-lee-b521b685/" target="_blank"><h4>李杭 Nancy Lee</h4></a>
-				</div>
-				<div class="people_firm">
-					<a><h4>萬峰策略 WhiteMaple Consulting 共同創辦人</h4></a>
-				</div>
-				<div class="people_description">
-					<h4>專長："商業分析、網路行銷、平台策略、專案管理、客戶關係"</h4>
-				</div>
-			</div>
-			<div class="people" id="user_1">
-				<div class="people_title">
-					<h4>Engineering 技術開發</h4>
-				</div>
-				<div class="people_pho">
-					<img src="{% static 'jpg/user_3.jpg' %}">
-				</div>
-				<div class="people_quote">
-					<h4>工程的知識日新月異，要終身學習。</h4>
-				</div>
-				<div class="people_name">
-					<a href="https://www.linkedin.com/in/chuangtc/" target="_blank"><h4>Jason Chuang</h4></a>
-				</div>
-				<div class="people_firm">
-					<a href="http://www.businessmodelsinc.com"><h4>AI4quant 創辦人暨執行長</h4></a>
-				</div>
-				<div class="people_description">
-					<h4>專長："AI、機器學習、大數據分析、軟體架構"</h4>
-				</div>
-			</div>
-			<div class="people" id="user_1">
-				<div class="people_title">
-					<h4>Entrepreneurship 創新領導力</h4>
-				</div>
-				<div class="people_pho">
-					<img src="{% static 'jpg/user_5.jpeg' %}">
-				</div>
-				<div class="people_quote">
-					<h4>捷安特的創辦人劉金標說：「我從生意人變成企業家，最大改變是認識自己。」 而認識自己夠深，就可以掌握命運。</h4>
-				</div>
-				<div class="people_name">
-					<a href="https://www.linkedin.com/in/elisachiu/" target="_blank"><h4>邱懷萱 Elisa Chiu</h4></a>
-				</div>
-				<div class="people_firm">
-					<a><h4>Anchor Taiwan 創辦人暨執行長</h4></a>
-				</div>
-				<div class="people_description">
-					<h4>專長："國際商業開發、策略夥伴、商業策略、創業"</h4>
-				</div>
-			</div>
-			<div class="people" id="user_1">
-				<div class="people_title">
-					<h4>UX 使用者體驗設計</h4>
-				</div>
-				<div class="people_pho">
-					<img src="{% static 'jpg/user_1.jpg' %}">
-				</div>
-				<div class="people_quote">
-					<h4>以人為本，從用戶出發，才能打造擁有持久生命力的好產品。</h4>
-				</div>
-				<div class="people_name">
-					<a href="https://www.linkedin.com/in/jillshih/ 
-					" target="_blank"><h4>施子薇 Jill Shih</h4></a>
-				</div>
-				<div class="people_firm">
-					<a><h4>COBINHOOD 執行長暨 DEXON Foundation 執行理事</h4></a>
-				</div>
-				<div class="people_description">
-					<h4>專長："區塊鏈、產品使用者體驗、互聯網產品、軟體開發、跨國團隊管理"</h4>
-				</div>
-			</div>
-			<div class="people" id="user_1">
-				<div class="people_title">
-					<h4>UX 使用者體驗設計</h4>
-				</div>
-				<div class="people_pho">
-					<img src="{% static 'jpg/user_2.jpg' %}">
-				</div>
-				<div class="people_quote">
-					<h4>UX design 是發掘並解決問題的手段, 是從宏觀到微觀的角度來檢視使用者體驗的思維, 是會讓人會心一笑並記住那美好時刻的良方</h4>
-				</div>
-				<div class="people_name">
-					<a href="https://www.linkedin.com/in/ammy-yao-71a8786/" target="_blank"><h4>姚美玲 Ammy Yao</h4></a>
-				</div>
-				<div class="people_firm">
-					<a><h4>趨勢科技資深設計經理</h4></a>
-				</div>
-				<div class="people_description">
-					<h4>專長："使用者研究、使用者經驗設計、互動設計、設計管理"</h4>
+				<div class="nine_right">
+					<div class="nine_role">
+						<h4>船長 Captain （導師）</h4>
+						<h5>-每月Meetup中，分享自己經驗，協助航海士、水手開拓視野，給予產業、職涯大方向等建議</h5>
+					</div>
+					<div class="nine_role">
+						<h4>航海士 Navigators （職場學姊）</h4>
+						<h5>-傾聽、給予水手職場實作上的過來人建議，協助水手在職涯初期需要的務實成長，培養自身領導管理能力；在船長的帶領之下，探索未來發展更多可能</h5>
+					</div>
+					<div class="nine_role">
+						<h4>水手 Sailors（導生）</h4>
+						<h5>-對自身發展有理想、希望能吸取前輩經驗，往目標更加努力；或對職涯發展略有迷惘，帶著切身問題和其他水手、以及前輩們交流</h5>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</article>
+		<article data-scrollmagic>
+			<div class="third" id="third">
+				<div class="third_title">
+					<h3>將由6位船長及航海士帶領水手們</h3>
+				</div>
+				<div class="people_container">
+					<div class="people" id="user_1">
+						<div class="people_title">
+							<h4>Business 商務開發</h4>
+						</div>
+						<div class="people_pho">
+							<img src="{% static 'jpg/user_6.png' %}">
+						</div>
+						<div class="people_quote">
+							<h4>賦能 (Empower) 合作夥伴，實現規模化銷售與管理的技術創新，最終達成合作夥伴與客戶的雙贏、成長！</h4>
+						</div>
+						<div class="people_name">
+							<a href="" target="_blank"><h4>李芝禎 Jane Li</h4></a>
+						</div>
+						<div class="people_firm">
+							<a><h4>Google 大中華區經銷通路業務總監</h4></a>
+						</div>
+						<div class="people_description">
+							<h4>專長：數位行銷與廣告業務、合作夥伴開發與管理、品牌策略溝通</h4>
+						</div>
+					</div>
+					<div class="people" id="user_1">
+						<div class="people_title">
+							<h4>Data Application 數據整合應用</h4>
+						</div>
+						<div class="people_pho">
+							<img src="{% static 'jpg/user_4.jpg' %}">
+						</div>
+						<div class="people_quote">
+							<h4>在凡事皆可被數據化的時代，應積極培養「數據識別」的能力，會洞悉不同數據的價值及真偽，以避免輕易被大量的雜訊所左右。</h4>
+						</div>
+						<div class="people_name">
+							<a href="https://www.linkedin.com/in/nancy-hang-lee-b521b685/" target="_blank"><h4>李杭 Nancy Lee</h4></a>
+						</div>
+						<div class="people_firm">
+							<a><h4>萬峰策略 WhiteMaple Consulting 共同創辦人</h4></a>
+						</div>
+						<div class="people_description">
+							<h4>專長：商業分析、網路行銷、平台策略、專案管理、客戶關係</h4>
+						</div>
+					</div>
+					<div class="people" id="user_1">
+						<div class="people_title">
+							<h4>Engineering 技術開發</h4>
+						</div>
+						<div class="people_pho">
+							<img src="{% static 'jpg/user_3.jpg' %}">
+						</div>
+						<div class="people_quote">
+							<h4>工程的知識日新月異，要終身學習。</h4>
+						</div>
+						<div class="people_name">
+							<a href="https://www.linkedin.com/in/chuangtc/" target="_blank"><h4>Jason Chuang</h4></a>
+						</div>
+						<div class="people_firm">
+							<a href="http://www.businessmodelsinc.com"><h4>AI4quant 創辦人暨執行長</h4></a>
+						</div>
+						<div class="people_description">
+							<h4>專長："AI、機器學習、大數據分析、軟體架構"</h4>
+						</div>
+					</div>
+					<div class="people" id="user_1">
+						<div class="people_title">
+							<h4>Entrepreneurship 創新領導力</h4>
+						</div>
+						<div class="people_pho">
+							<img src="{% static 'jpg/user_5.jpeg' %}">
+						</div>
+						<div class="people_quote">
+							<h4>捷安特的創辦人劉金標說：「我從生意人變成企業家，最大改變是認識自己。」 而認識自己夠深，就可以掌握命運。</h4>
+						</div>
+						<div class="people_name">
+							<a href="https://www.linkedin.com/in/elisachiu/" target="_blank"><h4>邱懷萱 Elisa Chiu</h4></a>
+						</div>
+						<div class="people_firm">
+							<a><h4>Anchor Taiwan 創辦人暨執行長</h4></a>
+						</div>
+						<div class="people_description">
+							<h4>專長：國際商業開發、策略夥伴、商業策略、創業</h4>
+						</div>
+					</div>
+					<div class="people" id="user_1">
+						<div class="people_title">
+							<h4>UX 使用者體驗設計</h4>
+						</div>
+						<div class="people_pho">
+							<img src="{% static 'jpg/user_1.jpg' %}">
+						</div>
+						<div class="people_quote">
+							<h4>以人為本，從用戶出發，才能打造擁有持久生命力的好產品。</h4>
+						</div>
+						<div class="people_name">
+							<a href="https://www.linkedin.com/in/jillshih/ 
+							" target="_blank"><h4>施子薇 Jill Shih</h4></a>
+						</div>
+						<div class="people_firm">
+							<a><h4>COBINHOOD 執行長暨 DEXON Foundation 執行理事</h4></a>
+						</div>
+						<div class="people_description">
+							<h4>專長：區塊鏈、產品使用者體驗、互聯網產品、軟體開發、跨國團隊管理</h4>
+						</div>
+					</div>
+					<div class="people" id="user_1">
+						<div class="people_title">
+							<h4>UX 使用者體驗設計</h4>
+						</div>
+						<div class="people_pho">
+							<img src="{% static 'jpg/user_2.jpg' %}">
+						</div>
+						<div class="people_quote">
+							<h4>UX design 是發掘並解決問題的手段, 是從宏觀到微觀的角度來檢視使用者體驗的思維, 是會讓人會心一笑並記住那美好時刻的良方</h4>
+						</div>
+						<div class="people_name">
+							<a href="https://www.linkedin.com/in/ammy-yao-71a8786/" target="_blank"><h4>姚美玲 Ammy Yao</h4></a>
+						</div>
+						<div class="people_firm">
+							<a><h4>趨勢科技資深設計經理</h4></a>
+						</div>
+						<div class="people_description">
+							<h4>專長：使用者研究、使用者經驗設計、互動設計、設計管理</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
 
 
-<div class="four" id="four">
-	<div class="four_title">
-		<img src="{% static 'jpg/ic_5.jpg' %}">
-		<h3>活動辦法</h3>
-	</div>
-	<div class="four_content">
-		<div class="four_left">
-			<ul>
-				<li>即日起~2019/4/14<br> 
-					第一階段書面報名 
-				</li>
-				<li>2019/5/5 <br>
-					初審 & 審查公布
-				</li>
-				<li>2019/5/18 <br> 
-					第二階段面試複審
-				</li>
-				<li>
-					2019/5/22<br> 
-					第二階段複審錄取結果公佈
-				</li>
+		<div class="four" id="four">
+			<div class="four_title">
+				<img src="{% static 'jpg/ic_5.jpg' %}">
+				<h3>活動辦法</h3>
+			</div>
+			<div class="four_content">
+				<div class="four_left">
+					<ul>
+						<li>即日起~2019/4/14<br> 
+							第一階段書面報名 
+						</li>
+						<li>2019/5/5 <br>
+							初審 & 審查公布
+						</li>
+						<li>2019/5/18 <br> 
+							第二階段面試複審
+						</li>
+						<li>
+							2019/5/22<br> 
+							第二階段複審錄取結果公佈
+						</li>
 <!-- 				<li>2018/7/14<br> 
 					開幕式 + Monthly Meeting 
 				</li>
@@ -420,8 +435,8 @@
 			</div>
 			<div class="five_left_right">
 				<ul>
-					<li>·錄取者以女性優先</li>
 					<li>·申請的組別領域專業工作經驗 1-3年內的職場新鮮人 (含實習經驗)</li>
+					<li>·錄取者以女性優先</li>
 				</ul>
 			</div>
 		</div>
@@ -434,10 +449,10 @@
 			</div>
 			<div class="five_right_right">
 				<ul>
-					<li>·至少具有3-6年以上申請的組別領域專業工作經驗</li>
-					<li>·具備提拔後進熱忱，樂意提供第一線實務協助者</li>
-					<li>·未來有興趣回饋女性科技社群者</li>
-					<li>·錄取者以女性優先</li>
+					<li>1·至少具有3-6年以上申請的組別領域專業工作經驗</li>
+					<li>2·具備提拔後進熱忱，樂意提供第一線實務協助者</li>
+					<li>3·未來有興趣回饋女性科技社群者</li>
+					<li>4·錄取者以女性優先</li>
 				</ul>
 			</div>
 		</div>
@@ -673,7 +688,7 @@
 				<input id="q4" type="checkbox" class="panel">
 				<div class="plus" style="  font-family: 'Raleway', sans-serif;">►</div>
 				<label for="q4" class="panel-title">4.請問，我剛剛送出了名表單，卻不慎上傳錯誤的履歷，有機會能更改上傳的檔案嗎？</label>
-				<div class="panel-content">可以修改您已送出的表單喔，煩請試試看，如果仍有問題，再請跟我們聯絡，謝謝！</div>
+				<div class="panel-content">可以修改您已送出的表單喔。送出表單後，您會看到完成表單的頁面，可立即點選「Edit your response」連結修改；若您要稍待修改，請儲存完成表單頁面的URL，於 4/14 報名截止前，由此頁面進入修改。若有其他問題，歡迎跟我們聯絡，謝謝！</div>
 			</div>
 		</div>
 		<div class="faq-content">
@@ -759,13 +774,14 @@
 	<div style="display: flex;">
 		<div style="width: 50%; display: block;"> 
 			<div class="eight_title">
-				<h3>場地協力</h3>
+				<h3>活動協力</h3>
 			</div>
 			<div style="display: flex; margin-left: 5rem; margin-top: 2rem; justify-content: space-around;">
 				<img src="{% static 'jpg/logo_left_right_1.png'%}" style="width: auto;height: 3.5rem;">
 				<img src="{% static 'jpg/logo_left_2.png'%}" style="width: auto;height: 3.5rem; ">
 				<img src="{% static 'jpg/logo_left_4.png'%}" style="width: auto;height: 3.5rem; ">
 				<img src="{% static 'jpg/logo_left_3.png'%}" style="width: auto;height: 3.5rem; ">
+				<img src="{% static 'jpg/logo_left_5.png'%}" style="width: auto;height: 3.5rem; ">
 			</div>
 		</div>
 		<div style="width: 50%; display: block;"> 
@@ -787,7 +803,7 @@
 			<div style="display: block;">
 				<div class="eight_left_title" style="margin-bottom: .8rem;">
 					<h5>GIT Taiwan</h5>
-					<a href="https://www.facebook.com/girlsintechtaiwan/"><img src="/static/jpg/bt_fb.jpg"></a>
+					<a href="https://www.facebook.com/girlsintechtaiwan/" target="_blank"><img src="/static/jpg/bt_fb.jpg"></a>
 				</div>
 
 				<div class="eight_left_content">
@@ -800,7 +816,7 @@
 			<div style="display: block;">
 				<div class="eight_right_title" style="margin-bottom: .8rem;">
 					<h5>LTUX. Taipei</h5>
-					<a href="https://www.facebook.com/ltuxtaipei/"><img src="/static/jpg/bt_fb.jpg"></a>
+					<a href="https://www.facebook.com/ltuxtaipei/" target="_blank"><img src="/static/jpg/bt_fb.jpg"></a>
 				</div>
 				<div class="eight_right_content">
 					<h6>全球女性使用者體驗設計社群</h6>
@@ -817,7 +833,7 @@
 			<div style="display: block;">
 				<div class="eight_left_title" style="margin-bottom: .8rem;">
 					<h5>The MentorShip Taiwan</h5>
-					<a href="https://www.facebook.com/The-MentorShip-%E6%9B%BC%E9%99%80%E8%99%9F%E9%A0%98%E8%88%AA%E8%A8%88%E7%95%AB-127497411432339/"><img src="/static/jpg/bt_fb.jpg"></a>
+					<a href="https://www.facebook.com/The-MentorShip-%E6%9B%BC%E9%99%80%E8%99%9F%E9%A0%98%E8%88%AA%E8%A8%88%E7%95%AB-127497411432339/" target="_blank"><img src="/static/jpg/bt_fb.jpg"></a>
 				</div>
 
 				<div class="eight_left_content">
